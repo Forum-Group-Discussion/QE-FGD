@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="2" failures="0" name="Autentikasi" skipped="0" tests="3" time="6.18" timestamp="2022-06-09 01:44:09"><testcase name="POST - As a user i have to be able to register"><error message="Cannot invoke &quot;utils.General.randomEmail()&quot; because &quot;this.general&quot; is null" type="java.lang.NullPointerException">Cannot invoke "utils.General.randomEmail()" because "this.general" is null</error><system-err>Cannot invoke "utils.General.randomEmail()" because "this.general" is null&#13;
+API@1.0-SNAPSHOT/starter.Autentikasi.RegistrasiAdmin.requestDataRegisterAdmin(RegistrasiAdmin.java:39)&#13;
+API@1.0-SNAPSHOT/starter.stepdefinitions.registrationStep.iRequestPOSTUserWithAndAndAndThisUserIs(registrationStep.java:23)&#13;
+✽.I request POST user with "adminfound" and "adminfound@gmail.com" and "adminfound1511" and this user is "true"(file:///D:/PERKULIAHAN/Semester%206,Hebatt%20glad!/QE-FGD/API/src/test/resources/features/autentikasi.feature:10)&#13;
+</system-err></testcase></testsuite>

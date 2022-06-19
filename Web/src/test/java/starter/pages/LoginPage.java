@@ -8,7 +8,7 @@ import org.openqa.selenium.By;
 public class LoginPage extends PageObject {
 
 
-    RegisterPage registerPage = new RegisterPage();
+
     private By loginForm(){
         return By.xpath("//*[@id=\"root\"]/div/div/h1");
     }

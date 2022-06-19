@@ -1,4 +1,16 @@
 -------------------------------------------------------------------------------
 Test set: starter.cucumberTestSuite
 -------------------------------------------------------------------------------
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 136.988 s - in starter.cucumberTestSuite
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 32.072 s <<< FAILURE! - in starter.cucumberTestSuite
+Logout.Logout scenario  Time elapsed: 24.2 s  <<< ERROR!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element is not clickable at point (110, 546)
+  (Session info: chrome=102.0.5005.115)
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'DESKTOP-01SKV80', ip: '192.168.100.9', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [024477f65ceb2bcef1397164ee7e8c21, clickElement {id=dda707d5-6b2d-41c6-9017-80e2d5ec230d}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\ASUS\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:64395}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64395/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (024477f65ceb2bcef1397164ee7e8c21)] -> xpath: //*[@value="Logout"]]
+Session ID: 024477f65ceb2bcef1397164ee7e8c21
+

@@ -15,6 +15,7 @@ public class loginStep {
     @Given("i have registered")
     public void iHaveRegistered() {
         registerPage.openUrl();
+
     }
 
 
@@ -32,7 +33,7 @@ public class loginStep {
     @Then("i get my {string} after login")
     public void iGetMyAfterLogin(String result)throws InterruptedException{
         if(result.equals("home page")){
-            homePage.validateAlertSuccesful();
+            homePage.validateAlertSuccesful(result);
         } else if(result.equals("login page")) {
             loginPage.validateFormLoginAppeared();
         }else{

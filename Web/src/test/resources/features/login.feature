@@ -16,10 +16,10 @@ Feature: Login
 
     Examples:
       |email|password|result|
-      |sonya@gmail.com|SonyaPrds1511|homepage|
+      |adminfound@gmail.com|adminFound1511|homepage|
       |               |SonyaPrds1511|login page|
       |sonya@gmail.com|             |login page|
       |               |             |login page|
-      |korakora@gmail.com|SonyaPrds1511|invalid email or password|
-      |sonya@gmail.com|SonyaPrds|invalid email or password|
-      |korakora@gmail.com|SonyaPrds|invalid email or password|
+      |sonyagmail.com |SonyaPrds1511|invalid email or password|
+      |sonya@gmail.com|SonyaPrds    |invalid email or password|
+      |sonyagmail.com |SonyaPrds    |invalid email or password|

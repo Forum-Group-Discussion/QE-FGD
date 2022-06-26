@@ -34,8 +34,10 @@ public class registrationStep {
             registrasiAdmin.validateDataDetail(message);
         }else if(message.equals("exist")){
             registrasiAdmin.errorMessageExistUser(message);
-        }else{
+        }else if(message.equals("required")){
             registrasiAdmin.errorMessageRequired(message);
+        }else{
+            registrasiAdmin.errorMessageInvalid(message);
         }
     }
 

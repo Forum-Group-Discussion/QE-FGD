@@ -5,7 +5,7 @@ import java.util.Random;
 public class General {
     Random rand = new Random();
     public String randomEmail(){
-        return "forumGroup" + + rand.nextInt(100000) + "@gmail.com";
+        return "forumGroup" + + rand.nextInt(1000) + "@gmail.com";
     }
 
 

@@ -10,7 +10,7 @@ import static org.hamcrest.Matchers.equalTo;
 
 public class GetAllUsers {
     private String token;
-    String base_url = "http://34.125.26.208/v1/";
+    String base_url = "http://44.206.244.111/v1/";
 
     public String endpointGetAllUser(){
         return base_url + "user";
@@ -28,6 +28,8 @@ public class GetAllUsers {
     }
 
     public void requestGetAllUserNoToken(){
+        token = null;
+        SerenityRest.given().header("Authorization", "Bearer " + token);
         SerenityRest.when().get(endpointGetAllUser());
     }
 

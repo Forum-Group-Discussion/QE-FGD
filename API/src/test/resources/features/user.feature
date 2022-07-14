@@ -2,8 +2,6 @@ Feature: user
   As an admin
   i want to get all user
   so that i can see all user
-
-
   @getAllUser
   Scenario: GET - As a user i have to be able to get all user
   Given I set an endpoint for get all user
@@ -27,7 +25,7 @@ Feature: user
 
       Examples:
         |id_endpoint|id_request|status_code|result|
-        |11|11|200        |authorized             |
+        |31|31|200        |authorized             |
         |100|100|400       |not authorized        |
         |user01|user01|400    |bad request     |
 
@@ -44,6 +42,23 @@ Feature: user
           When I request POST detail user
           Then I validate the status code 405
           And I get the method not allowed error
+
+    @putUser
+      Scenario Outline: PUT - As a user i can update my profile
+        Given I set an endpoint for update user with "<id_user>"
+        When I request UPDATE user with "<data>" and "<id_user>" and "<token>"
+        Then I validate the status code <status_code>
+        And I get the "<result>" update user same with "<data>"
+
+      Examples:
+      |id_user|data|token|status_code|result|
+      |     31 |ihsangtg|valid|200   |success|
+      |     2 |kombat    |invalid|400 |invalid token|
+
+
+
+
+
 
 
 

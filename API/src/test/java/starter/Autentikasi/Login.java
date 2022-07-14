@@ -10,7 +10,7 @@ import java.io.IOException;
 import static org.hamcrest.Matchers.equalTo;
 
 public class Login {
-    String base_url = "http://34.125.26.208/v1/";
+    String base_url = "http://44.206.244.111/v1/";
 
     public String endpointLogin(){
         return base_url + "auth/login";

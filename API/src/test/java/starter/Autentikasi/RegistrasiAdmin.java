@@ -2,70 +2,37 @@ package starter.Autentikasi;
 
 import io.restassured.response.Response;
 import net.serenitybdd.rest.SerenityRest;
+import org.apache.commons.io.FileUtils;
 import org.json.simple.JSONObject;
 import utils.General;
 
+import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 
+import static net.serenitybdd.rest.RestRequests.given;
 import static net.serenitybdd.rest.SerenityRest.then;
 import static org.hamcrest.Matchers.equalTo;
 
 public class RegistrasiAdmin{
-    String email;
-    String name;
-    String password;
+    private String token;
 
-    General general = new General();
-
-    String base_url = "http://34.125.26.208/v1/";
+    BodyRegister bodyRegister = new BodyRegister();
+    String base_url = "http://44.206.244.111/v1/";
 
     public String endpointAdminRegister(){
         return base_url + "auth/register";
     }
 
-    public void requestDataRegisterAdmin(String name, String email ,String password, String adminStatus){
-        Boolean.parseBoolean("true");
-        JSONObject requestData = new JSONObject();
-
-        if (name.equals("same")){
-            this.name = "aduhaihsan";
-        }else{
-            this.name = name;
-        }
-
-        if (email.equals("same")){
-            this.email = "real_akun@gmail.com";
-        } else if(email.equals("adminfound@gmail.com")){
-            this.email = general.randomEmail();
-            try (FileWriter file = new FileWriter("src//test//resources//filejson//email.json")) {
-                file.write(this.email);
-                file.flush();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }else if(email.equals("adminfound")){
-            this.email = email;
-        }else{
-            this.email = email;
-        }
-
-
-
-        if (password.equals("same")) {
-            this.password = "aduhaIhsan1511";
-        }else {
-            this.password=password;
-        }
-
-
-        requestData.put("name", this.name);
-        requestData.put("email", this.email);
-        requestData.put("password", this.password);
-        requestData.put("adminStatus",adminStatus);
-
-        SerenityRest.given().header("Content-Type", "application/json")
-                .body(requestData.toJSONString());
+    public void requestDataRegisterAdmin(String name, String email ,String password, String adminStatus) throws IOException {
+        token = FileUtils.readFileToString(new File(System.getProperty("user.dir") + "//src//test//resources//filejson//tokens.json"), StandardCharsets.UTF_8);
+        File file = new File("src/test/resources/image/contoh.png");
+        given().header("Content-Type", "multipart/form-data")
+                .header("Authorization", "Bearer " + token)
+                .multiPart("json", bodyRegister.dataForRegister(name, email, password, adminStatus).toJSONString())
+                .multiPart("file",file,"png")
+                .log().body();
         SerenityRest.when().post(endpointAdminRegister());
     }
 

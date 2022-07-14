@@ -6,12 +6,15 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import starter.Users.GetAllUsers;
 import starter.Users.GetUsersById;
+import starter.Users.UpdateUsers;
 
 import java.io.IOException;
 
 public class userStep {
     GetAllUsers getAllUsers = new GetAllUsers();
     GetUsersById getUsersById = new GetUsersById();
+    UpdateUsers updateUsers = new UpdateUsers();
+
     @Given("I set an endpoint for get all user")
     public void iSetAnEndpointForGetAllUser() {
         getAllUsers.endpointGetAllUser();
@@ -82,4 +85,32 @@ public class userStep {
     public void iGetTheMethodNotAllowedError() {
         getUsersById.validateMethodNotAllowed();
     }
+
+    @Given("I set an endpoint for update user with {string}")
+    public void iSetAnEndpointForUpdateUserWith(String id_user) {
+        updateUsers.endpointUpdateUser(id_user);
+
+    }
+
+    @When("I request UPDATE user with {string} and {string} and {string}")
+    public void iRequestUPDATEUserWithAndAnd(String data, String id_user, String token) throws IOException {
+        if(token.equals("valid")){
+            updateUsers.requestUpdateUser(id_user,data);
+        }else{
+            updateUsers.requestUpdateUserInvalidToken(id_user,data);
+        }
+
+    }
+
+    @And("I get the {string} update user same with {string}")
+    public void iGetTheUpdateUserSameWith(String result,String data) {
+
+        if(result.equals("success")){
+            updateUsers.validateDataDetail(data);
+        }else{
+            updateUsers.errorMessage();
+        }
+    }
+
+
 }

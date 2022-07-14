@@ -8,6 +8,8 @@ import io.cucumber.java.en.When;
 import net.thucydides.core.annotations.Steps;
 import starter.Autentikasi.RegistrasiAdmin;
 
+import java.io.IOException;
+
 public class registrationStep {
 
     @Steps
@@ -19,7 +21,7 @@ public class registrationStep {
     }
 
     @When("I request POST user with {string} and {string} and {string} and this user is {string}")
-    public void iRequestPOSTUserWithAndAndAndThisUserIs(String name, String email, String password, String adminStatus) {
+    public void iRequestPOSTUserWithAndAndAndThisUserIs(String name, String email, String password, String adminStatus) throws IOException {
         registrasiAdmin.requestDataRegisterAdmin(name,email,password,adminStatus);
     }
 

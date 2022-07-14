@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: Following
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 10.64 s <<< FAILURE! - in Following
+Following.GET - As a user i am able to get followers of an account #1  Time elapsed: 8.95 s  <<< ERROR!
+net.serenitybdd.core.exceptions.SerenityManagedException: 
+1 expectation failed.
+Expected status code <200> but was <400>.
+
+

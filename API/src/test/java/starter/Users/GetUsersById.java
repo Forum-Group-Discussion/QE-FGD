@@ -11,7 +11,7 @@ import static org.hamcrest.Matchers.equalTo;
 
 public class GetUsersById {
     private String token;
-    String base_url = "http://34.125.26.208/v1/";
+    String base_url = "http://44.206.244.111/v1/";
 
     public String endpointGetUserById(String user_id){
         return base_url + "user/" + user_id;
@@ -24,7 +24,7 @@ public class GetUsersById {
     }
 
     public void validateDataDetail(){
-        SerenityRest.then().body("data.id", equalTo(11));
+        SerenityRest.then().body("data.id", equalTo(31));
     }
 
     public void validateErrorMessage(String result){
@@ -39,6 +39,8 @@ public class GetUsersById {
     }
 
     public void requestGetUserByIdwWithNoToken(String user_id) {
+        token = null;
+        SerenityRest.given().header("Authorization", "Bearer " + token);
         SerenityRest.when().get(endpointGetUserById(user_id));
     }
 

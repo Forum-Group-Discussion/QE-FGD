@@ -192,7 +192,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 25-06-2022 22:04</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 14-07-2022 07:31</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>
@@ -207,7 +207,8 @@
                         <td width="375px" valign="top">
                             <div class="test-count-summary">
                                 <div class="test-count-title">
-                                    1 test scenarios 
+                                    2 test scenarios 
+                                        (including 2 rows of test data)
                                     
 
                                 </div>
@@ -237,10 +238,10 @@
                                                             </div>
                                                             <script>
 
-                                                                var labels = ['100%', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '];
+                                                                var labels = ['50%', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '50%', ' ', ' ', ' ', ' ', ' '];
                                                                 // Our series array that contains series objects or in this case series data arrays
 
-                                                                var series = [{meta: 'Passing tests (automated)', value: 1}, {meta: 'Passing tests (manual)', value: 0}, {meta: 'Pending tests (automated)', value: 0}, {meta: 'Pending tests (manual)', value: 0}, {meta: 'Ignored tests (automated)', value: 0}, {meta: 'Ignored tests (manual)', value: 0}, {meta: 'Skipped tests (automated)', value: 0}, {meta: 'Skipped tests (manual)', value: 0}, {meta: 'Failing tests (automated)', value: 0}, {meta: 'Failing tests (manual)', value: 0}, {meta: 'Broken tests (automated)', value: 0}, {meta: 'Broken tests (manual)', value: 0}, {meta: 'Compromised tests (automated)', value: 0}, {meta: 'Compromised tests (manual)', value: 0}];
+                                                                var series = [{meta: 'Passing tests (automated)', value: 1}, {meta: 'Passing tests (manual)', value: 0}, {meta: 'Pending tests (automated)', value: 0}, {meta: 'Pending tests (manual)', value: 0}, {meta: 'Ignored tests (automated)', value: 0}, {meta: 'Ignored tests (manual)', value: 0}, {meta: 'Skipped tests (automated)', value: 0}, {meta: 'Skipped tests (manual)', value: 0}, {meta: 'Failing tests (automated)', value: 1}, {meta: 'Failing tests (manual)', value: 0}, {meta: 'Broken tests (automated)', value: 0}, {meta: 'Broken tests (manual)', value: 0}, {meta: 'Compromised tests (automated)', value: 0}, {meta: 'Compromised tests (manual)', value: 0}];
 
                                                                 // As options we currently only set a static size of 300x200 px. We can also omit this and use aspect ratio containers
                                                                 // as you saw in the previous example
@@ -300,7 +301,7 @@
                                                                                     class='fa fa-check-circle-o success-icon'></i>&nbsp;Passing</a>
                                                                     </td>
                                                                 <td class="automated-stats">1</td>
-                                                                <td class="automated-stats">100%</td>
+                                                                <td class="automated-stats">50%</td>
                                                             </tr>
                                                             <tr>
                                                                     <td class="aggregate-result-count"><i
@@ -324,17 +325,18 @@
                                                                 <td class="automated-stats"> </td>
                                                             </tr>
                                                             <tr>
-                                                                        <td colspan="3"><i
-                                                                                    class='fa fa-times failure-icon'></i>&nbsp;<em>Unsuccessful</em></a>
+                                                                        <td colspan="3"><a
+                                                                                    href="b964a040ccee2192880812cc5de2c4d0075e3288c1b298b7dda0839367bb26be.html"><i
+                                                                                        class='fa fa-times failure-icon'></i>&nbsp;<em>Unsuccessful</em></a>
                                                                         </td>
                                                             </tr>
                                                             <tr>
                                                                     <td class="aggregate-result-count indented-error-category">
-                                                                        <i
-                                                                                class='fa fa-times-circle failure-icon'></i>&nbsp;Failed
+                                                                        <a href="da5b0c51b332adf0ef993a9f086d6a1b51a3d800248ec6ae281212092f35bd37.html"><i
+                                                                                    class='fa fa-times-circle failure-icon'></i>&nbsp;Failed</a>
                                                                     </td>
-                                                                <td class="automated-stats">0</td>
-                                                                <td class="automated-stats"> </td>
+                                                                <td class="automated-stats">1</td>
+                                                                <td class="automated-stats">50%</td>
                                                             <tr>
                                                                     <td class="aggregate-result-count indented-error-category">
                                                                         <i
@@ -352,7 +354,7 @@
                                                             </tr>
                                                             <tr class="summary-stats">
                                                                 <td class="aggregate-result-count">Total</td>
-                                                                <td class="automated-stats">1</td>
+                                                                <td class="automated-stats">2</td>
                                                                 <td class="automated-stats"></td>
                                                             </tr>
                                                             </tbody>
@@ -374,11 +376,11 @@
                                                             </thead>
                                                             <tbody>
                                                             <tr>
-                                                                <td>4s</td>
+                                                                <td>10s</td>
                                                                 <td>0ms</td>
-                                                                <td>4s</td>
-                                                                <td>4s</td>
-                                                                <td>4s</td>
+                                                                <td>1s</td>
+                                                                <td>8s</td>
+                                                                <td>10s</td>
                                                             </tr>
                                                             </tbody>
                                                         </table>
@@ -405,20 +407,28 @@
                                                                         <tbody>
                                                                             <tr>
                                                                                 <td>
-                                                                                        <a href="de7f7fb254d30265ef1612e3319e337275d378d27c0924230a847d6a8c297ab2.html">User</a>
+                                                                                        <a href="9b75bb67619e214798de16aca899760d7c3b0c805f4497165a65087dc0fdfa11.html">Following</a>
                                                                                 </td>
-                                                                                <td>1</td>
-                                                                                <td>100%</td>
+                                                                                <td>2</td>
+                                                                                <td>50%</td>
                                                                                 <td>
-                                                                                        <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
+                                                                                        <a href='##beforetable'><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i></a>
                                                                                 </td>
                                                                                 <td>
                                                                                     <div class="progress">
                                                                                             <div class="progress-bar"
                                                                                                  role="progressbar"
-                                                                                                 style="width: 100%; background-color: #30cb23"
+                                                                                                 style="width: 50%; background-color: #30cb23"
                                                                                                  aria-valuenow="1"
-                                                                                                 title="100% success"
+                                                                                                 title="50% success"
+                                                                                                 aria-valuemin="0"
+                                                                                                 aria-valuemax="100">
+                                                                                            </div>
+                                                                                            <div class="progress-bar"
+                                                                                                 role="progressbar"
+                                                                                                 style="width: 50%; background-color: #f8001f"
+                                                                                                 aria-valuenow="1"
+                                                                                                 title="50% failure"
                                                                                                  aria-valuemin="0"
                                                                                                  aria-valuemax="100">
                                                                                             </div>
@@ -430,6 +440,43 @@
                                                         </div>
                                                     </div>
 
+                                                    <div class="row">
+                                                        <div class="col-sm-6">
+                                                            <h3>Test Failure Overview</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-sm-6">
+                                                            <h4>Most Frequent Failures</h4>
+                                                            <table class="table">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td class="failure-color top-list-title">
+                                                                            <a href="a0ace456df350117335ad374e8d62c0d8c978db868ea1469e0c5ba32aac965ea.html"><a href='##beforetable'><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i></a> Assertion error</a>
+                                                                        </td>
+                                                                        <td><span
+                                                                                    class="badge failure-badge">1</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                        <div class="col-sm-6">
+                                                            <h4>Most Unstable Features</h4>
+                                                            <table class="table">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td class="failure-color top-list-title"><a
+                                                                                    href="9b75bb67619e214798de16aca899760d7c3b0c805f4497165a65087dc0fdfa11.html">Following</a>
+                                                                        </td>
+                                                                        <td><span
+                                                                                    class="badge failure-badge">50%</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
 
                                                     <div class="row">
                                                         <div class="col-sm-12">
@@ -438,10 +485,10 @@
                                                                 <div class="card">
                                                                     <div class="card-body">
                                                                         <div>
-                                                                                <a href="113410537ad8df9cc2f21f50dda6fffd139e73fba6604cf87cb7831e2557b79e.html">
+                                                                                <a href="e3bc7669de3770f454f42d667e3336cd07f3ec03214432e4969af9b89884be50.html">
                                                                         <span class="badge"
-                                                                              style="background-color:#1D9918; margin:1em;padding:4px;"><i
-                                                                                    class="fa fa-tag"></i> Get User By Id With Post Request&nbsp;&nbsp;&nbsp;1</span>
+                                                                              style="background-color:#f8001f; margin:1em;padding:4px;"><i
+                                                                                    class="fa fa-tag"></i> Get Following On Account&nbsp;&nbsp;&nbsp;2</span>
                                                                                 </a>
                                                                         </div>
                                                                     </div>
@@ -469,18 +516,19 @@
                                                                 </tr>
                                                                 </thead>
                                                                 <tbody>
-                                                                    <tr class="scenario-result SUCCESS">
+                                                                    <tr class="scenario-result FAILURE">
                                                                         <td>
-                                                                                <a href="de7f7fb254d30265ef1612e3319e337275d378d27c0924230a847d6a8c297ab2.html">user</a>
+                                                                                <a href="9b75bb67619e214798de16aca899760d7c3b0c805f4497165a65087dc0fdfa11.html">Following</a>
                                                                         </td>
                                                                         <td>
-                                                                            <a href="001b478807fc06317d87aa18312fed23dbb4ee5d33f6adfb0799d510d9dcf63a.html">POST - As a user i cannot use post method to get detail user</a>
+                                                                            <a href="784f6fa08faeb2da598e814eeccce9bbcc4263b5d4d0ee9d178b9ab4eb16a180.html">GET - As a user i am able to get followers of an account</a>
+                                                                                (2 examples)
                                                                         </td>
                                                                         <td>4</td>
-                                                                        <td>22:04:06</td>
-                                                                        <td>4s 609ms</td>
-                                                                        <td><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a> <span
-                                                                                    style="display:none">SUCCESS</span>
+                                                                        <td>07:31:37</td>
+                                                                        <td>10s 178ms</td>
+                                                                        <td><a href='##beforetable'><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i></a> <span
+                                                                                    style="display:none">FAILURE</span>
                                                                         </td>
                                                                     </tr>
                                                                 </tbody>

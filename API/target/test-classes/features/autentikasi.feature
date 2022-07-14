@@ -40,4 +40,9 @@ Feature: Autentikasi
     Examples:
     |email|password|status_code|result|
     |adminfound@gmail.com|adminFound1511|200|success|
-
+    |                    |adminFound1511|400|email required|
+    |adminfound@gmail.com|             |400|password required|
+    |                    |             |400|email required|
+    |adminfound@gmail.com|adminFound151|400|Data not found|
+    |adminsfounds@gmail.com|adminFound1511|400|Data not found|
+    |adminsfounds@gmail.com|adminFound151|400|Data not found|

@@ -23,6 +23,7 @@ public class GetFollowingOnAccount {
                 .header("Authorization", "Bearer " + token);
         SerenityRest.when().get(endpointGetFollowersOnAccount());
     }
+
     public void requestGetFollowersOnAccountWithNoFollowers() throws IOException {
         this.token = FileUtils.readFileToString(new File(System.getProperty("user.dir") + "//src//test//resources//filejson//tokenWithoutFollowing.json"), StandardCharsets.UTF_8);
         SerenityRest.given().header("Content-Type", "application/json")

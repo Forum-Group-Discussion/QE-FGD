@@ -12,11 +12,11 @@ Feature: Following
 
     Examples:
     |token|user_follow|status_code|id_user|result|
-    |valid|  36       |  200       |35|success|
-    |valid|  36       |200         |35|two times following|
+    |valid|  3       |  200       |13|success|
+    |valid|  3       |200         |13|two times following|
     |valid|  1000    |400        |35|data_not_found |
-    |valid|   35         |400         |35  | CAN'T_FOLLOW_YOURSELF|
-    |invalid|  6     |400         |35|invalid token  |
+    |valid|   13         |400         |13  | CAN'T_FOLLOW_YOURSELF|
+    |invalid|  6     |400         |12|invalid token  |
 
 
     @GETFollowingById
@@ -28,8 +28,9 @@ Feature: Following
 
       Examples:
       |id_following|token|status_code|result|id_user|user_follow|
-      |1          |valid|200        |success|  35  |36        |
+      |2          |valid|200        |success|  13  |3        |
       |400         |valid|400        |data_not_found|35|39     |
+      |1           |invalid|400      |invalid token |35|39     |
 
 
       @GetFollowingOnAccount
@@ -41,5 +42,5 @@ Feature: Following
 
         Examples:
         |token|status_code|result|id_user|user_follow|
-        |token with following user|200   |success|35    |36      |
-        |token without following user|400|data not found|0|0|
+        |token with following user|200   |success|13    |3      |
+        |token without following user|400|data not found|13|3|

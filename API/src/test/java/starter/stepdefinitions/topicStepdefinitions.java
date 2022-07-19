@@ -7,6 +7,7 @@ import io.cucumber.java.en.When;
 import starter.Topic.CreateTopic;
 import starter.Topic.GetAllTopic;
 import starter.Topic.GetTopicById;
+import starter.Topic.PutTopic;
 import starter.Users.GetAllUsers;
 
 import java.io.IOException;
@@ -15,6 +16,7 @@ public class topicStepdefinitions {
     CreateTopic createTopic = new CreateTopic();
     GetAllTopic getAllTopic = new GetAllTopic();
     GetTopicById getTopicById = new GetTopicById();
+    PutTopic putTopic = new PutTopic();
 
     @Given("I set an endpoint for make a topic")
     public void iSetAnEndpointForMakeATopic() {
@@ -96,5 +98,29 @@ public class topicStepdefinitions {
     }
 
 
+    @Given("I set an endpoint for update topic with {int}")
+    public void iSetAnEndpointForUpdateTopicWith(int id_topic) {
+        putTopic.endpointPutTopic(id_topic);
+    }
 
+    @When("I request data {string} with PUT and {int} for topic name")
+    public void iRequestDataWithPUTAndId_topicForTopicName(String data, int topic_id) throws IOException {
+        putTopic.requestPutTopic(topic_id, data);
+    }
+
+    @And("I validate that the topic has been changed and validate the {string}")
+    public void iValidateThatTheTopicHasBeenChangedAndValidateThe(String data) {
+
+
+
+    }
+
+    @And("I validate that the topic has been changed into {string} and validate the {string}")
+    public void iValidateThatTheTopicHasBeenChangedIntoAndValidateThe(String data, String response) {
+        if(response.equals("success")){
+            putTopic.validateDataDetail(data);
+        }else{
+            putTopic.errorMessage();
+        }
+    }
 }

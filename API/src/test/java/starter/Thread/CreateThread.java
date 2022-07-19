@@ -37,6 +37,17 @@ public class CreateThread {
     }
 
 
+    public void requestForThreadWithoutImage() throws IOException {
+        token = FileUtils.readFileToString(new File(System.getProperty("user.dir") + "//src//test//resources//filejson//tokens.json"), StandardCharsets.UTF_8);
+        File file = new File("src/test/resources/image/contoh.png");
+        given().header("Content-Type", "multipart/form-data")
+                .header("Authorization", "Bearer " + token)
+                .multiPart("json", bodyThread.dataForThread().toJSONString())
+                .log().body();
+        SerenityRest.when().post(endpointPostThread());
+    }
+
+
 
     public void getDetailThread(){
         SerenityRest.then().body("data.content", equalTo("Krisis ekonomi adalah salah satu hal yang paling ditakuti oleh negara di seluruh dunia. Bagaimana tidak, jika hal tersebut terjadi, kerugian akan menimpa pemerintah dan masyarakat sekaligus."));
@@ -72,10 +83,30 @@ public class CreateThread {
         SerenityRest.when().post(endpointPostThread());
     }
 
+    public void requestPostUnavailable() throws Exception {
+        token = FileUtils.readFileToString(new File(System.getProperty("user.dir") + "//src//test//resources//filejson//tokens.json"), StandardCharsets.UTF_8);
+        File file = new File("src/test/resources/image/contoh.png");
+        given().header("Content-Type", "multipart/form-data")
+                .header("Authorization", "Bearer " + token)
+                .multiPart("json", bodyThread.dataForUnavailableTopic().toJSONString())
+                .multiPart("file", file,"png")
+                .log().body();
+        SerenityRest.when().post(endpointPostThread());
+    }
 
 
 
 
+    public void requestThreadWithInvalidToken() throws Exception {
+        this.token = FileUtils.readFileToString(new File(System.getProperty("user.dir") + "//src//test//resources//filejson//InvalidToken.json"), StandardCharsets.UTF_8);
+        File file = new File("src/test/resources/image/contoh.png");
+        given().header("Content-Type", "multipart/form-data")
+                .header("Authorization", "Bearer " + token)
+                .multiPart("json", bodyThread.dataForInvalidToken().toJSONString())
+                .multiPart("file", file,"png")
+                .log().body();
+        SerenityRest.when().post(endpointPostThread());
+    }
 
 
 

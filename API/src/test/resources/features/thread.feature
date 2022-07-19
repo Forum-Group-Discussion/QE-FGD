@@ -4,23 +4,31 @@ Feature: thread
   so that people can see my thread
 
   @PostThread
-  Scenario: POST - As a user i am able to make a thread
+  Scenario Outline: POST - As a user i am able to make a thread
     Given I set an endpoint for make a thread
-    When I request POST thread
+    When I request POST thread with or without "<image>"
     Then I validate the status code 200
     And I get the data detail
+
+    Examples:
+    |image|
+    |null image|
+    |an image  |
 
     @PostThreadWithInvalidData
     Scenario Outline: POST - As a user i am not able to make a thread with Invalid Data
       Given I set an endpoint for make a thread
       When I request POST thread with "<data>"
-      Then I validate the status code 500
+      Then I validate the status code <status_code>
       And I get thread "<error_message>"
 
       Examples:
-      |data|error_message|
-      |invalid| data_not_found |
-      |  null | internal_server_error|
+      |data|status_code|error_message|
+      |invalid|500|data_not_found |
+      |unavailable topic id|400|data_not_found|
+      |null |500|internal_server_error|
+      |invalid token|400|unauthorized|
+
 
       @GetThread
       Scenario Outline: GET - As a user i am able to get detail thread
@@ -31,7 +39,7 @@ Feature: thread
 
         Examples:
         |id_thread|token|status_code|detail_thread|
-        |3        |valid|200        |success      |
+        |1        |valid|200        |success      |
         |Covid1   |valid|400        |bad request  |
         |100      |valid|400        |data_not_found|
         |1        |invalid|400        |invalid token      |

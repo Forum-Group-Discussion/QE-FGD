@@ -37,7 +37,7 @@ public class GetThread {
     }
 
     public void validateDataDetail(){
-        SerenityRest.then().body("data.id", equalTo(3));
+        SerenityRest.then().body("data.id", equalTo(1));
     }
 
     public void errorMessageThread(String detail_thread){

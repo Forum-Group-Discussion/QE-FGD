@@ -24,7 +24,7 @@ public class GetUsersById {
     }
 
     public void validateDataDetail(){
-        SerenityRest.then().body("data.id", equalTo(31));
+        SerenityRest.then().body("data.id", equalTo(13));
     }
 
     public void validateErrorMessage(String result){

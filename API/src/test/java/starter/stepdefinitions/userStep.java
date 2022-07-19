@@ -104,7 +104,6 @@ public class userStep {
 
     @And("I get the {string} update user same with {string}")
     public void iGetTheUpdateUserSameWith(String result,String data) {
-
         if(result.equals("success")){
             updateUsers.validateDataDetail(data);
         }else{

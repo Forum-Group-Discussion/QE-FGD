@@ -1,9 +1,11 @@
-starter\Comment\LikeComment.class
+starter\LikeThread\PostLikesOnAThread.class
 starter\Autentikasi\BodyRegister.class
 starter\Following\GetFollowingOnAccount.class
 starter\Autentikasi\Login.class
 starter\Thread\GetAllThread.class
+starter\stepdefinitions\commentStep.class
 starter\Autentikasi\RegistrasiAdmin.class
+starter\Comments\DeleteCommentOnAThread.class
 starter\Users\GetAllUsers.class
 starter\Following\GetAllFollowers.class
 starter\Topic\CreateTopic.class
@@ -12,6 +14,7 @@ starter\stepdefinitions\loginSteps.class
 starter\Users\GetUsersById.class
 starter\Thread\CreateThread.class
 starter\Topic\GetTopicById.class
+starter\LikeThread\GetAllLikesOnAthread.class
 utils\General.class
 starter\Following\CreateFollowing.class
 starter\Topic\GetAllTopic.class
@@ -19,10 +22,11 @@ starter\cucumberTestSuite.class
 starter\stepdefinitions\registrationStep.class
 starter\Thread\BodyThread.class
 starter\Thread\GetThread.class
-starter\Comment\ViewComment.class
 starter\stepdefinitions\topicStepdefinitions.class
 starter\stepdefinitions\threadStep.class
-starter\Comment\CreateComment.class
-starter\Comment\DeleteComment.class
+starter\stepdefinitions\likeThread.class
+starter\Topic\PutTopic.class
+starter\Comments\PostCommentOnThread.class
 starter\Users\UpdateUsers.class
+starter\Comments\GetCommentOnAThread.class
 starter\stepdefinitions\followingSteps.class

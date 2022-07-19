@@ -81,7 +81,6 @@ public class followingSteps {
 
     @And("I get the {string} with id user {int} and id user followed {int}")
     public void iGetTheWithIdUserId_userAndIdUserFollowedUser_follow(String result,int id_user,int user_follow) {
-
         if (result.equals("success")){
             getFollowingOnAccount.validateGetDetail(id_user,user_follow);
         }else if(result.equals("data not found")){

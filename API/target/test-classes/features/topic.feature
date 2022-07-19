@@ -45,3 +45,18 @@ Feature: Topic
         |e-sport |valid|    400    |    bad_request  |
         |   1    |invalid|   400     |   invalid token   |
 
+
+        @PutTopic
+        Scenario Outline: PUT - As a user i want to update topic name for thread
+          Given I set an endpoint for update topic with <id_topic>
+          When I request data "<data>" with PUT and <id_topic> for topic name
+          Then I validate the status code <status_code>
+          And I validate that the topic has been changed into "<data>" and validate the "<response>"
+
+          Examples:
+         |id_topic|data|status_code|response|
+         |1|Drama Korea|200|success|
+         |1000|Drama Turki|400|data not found|
+
+
+

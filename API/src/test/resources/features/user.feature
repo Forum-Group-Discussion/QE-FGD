@@ -2,6 +2,7 @@ Feature: user
   As an admin
   i want to get all user
   so that i can see all user
+
   @getAllUser
   Scenario: GET - As a user i have to be able to get all user
   Given I set an endpoint for get all user
@@ -25,7 +26,7 @@ Feature: user
 
       Examples:
         |id_endpoint|id_request|status_code|result|
-        |31|31|200        |authorized             |
+        |13|13|200        |authorized             |
         |100|100|400       |not authorized        |
         |user01|user01|400    |bad request     |
 
@@ -52,7 +53,7 @@ Feature: user
 
       Examples:
       |id_user|data|token|status_code|result|
-      |     31 |ihsangtg|valid|200   |success|
+      |     13 |denaa pardosi|valid|200   |success|
       |     2 |kombat    |invalid|400 |invalid token|
 
 

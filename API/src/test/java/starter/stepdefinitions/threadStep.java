@@ -16,15 +16,21 @@ public class threadStep {
     CreateThread createThread = new CreateThread();
     GetThread getThread = new GetThread();
     GetAllThread getAllThread = new GetAllThread();
-    RegistrasiAdmin registrasiAdmin = new RegistrasiAdmin();
+
     @Given("I set an endpoint for make a thread")
     public void iSetAnEndpointForMakeAThread() {
         createThread.endpointPostThread();
     }
 
-    @When("I request POST thread")
-    public void iRequestPOSTThread() throws Exception {
-        createThread.requestForThread();
+
+
+    @When("I request POST thread with or without {string}")
+    public void iRequestPOSTThreadWithOrWithout(String image) throws IOException {
+        if(image.equals("null image")){
+            createThread.requestForThreadWithoutImage();
+        }else{
+            createThread.requestForThread();
+        }
 
     }
 
@@ -33,15 +39,19 @@ public class threadStep {
         createThread.getDetailThread();
     }
 
-
     @When("I request POST thread with {string}")
-    public void iRequestPOSTThreadWith(String data) throws Exception{
-       if (data.equals("invalid")){
-           createThread.requestPostThreadInvalidData();
-       }else if(data.equals("null")){
-           createThread.requestPostNullThread();
-       }
+    public void iRequestPOSTThreadWithAnd(String data) throws Exception {
+        if (data.equals("invalid")){
+            createThread.requestPostThreadInvalidData();
+        }else if(data.equals("null")){
+            createThread.requestPostNullThread();
+        }else if(data.equals("invalid")){
+            createThread.requestPostUnavailable();
+        }else {
+            createThread.requestThreadWithInvalidToken();
+        }
     }
+
 
     @And("I get thread {string}")
     public void iGetThread(String errormessage) {
@@ -101,6 +111,7 @@ public class threadStep {
         }
 
     }
+
 
 
 }

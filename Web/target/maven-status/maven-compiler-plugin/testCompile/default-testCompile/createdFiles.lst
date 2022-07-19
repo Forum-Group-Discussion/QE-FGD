@@ -1,8 +1,0 @@
-starter\pages\HomePage.class
-util\General.class
-starter\stepdefinition\registerStep.class
-starter\pages\LoginPage.class
-starter\stepdefinition\loginStep.class
-starter\stepdefinition\logoutSteps.class
-starter\pages\RegisterPage.class
-starter\cucumberTestSuite.class

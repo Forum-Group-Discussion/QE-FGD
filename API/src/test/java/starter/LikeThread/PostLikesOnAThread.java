@@ -10,6 +10,8 @@ import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
 import java.util.Map;
 
+import static org.hamcrest.Matchers.equalTo;
+
 public class PostLikesOnAThread {
     private String token;
     String base_url = "http://44.206.244.111/v1/";
@@ -29,5 +31,14 @@ public class PostLikesOnAThread {
                  .header("Authorization", "Bearer " + token)
                  .body(requestData.toJSONString());
          SerenityRest.when().post(endpointLikeThread());
+     }
+
+     public void validateDataDetailLikeThread(int id_thread){
+         SerenityRest.then().body("message",equalTo("SUCCESS"));
+         SerenityRest.then().body("data.thread_like.id",equalTo(id_thread));
+     }
+
+     public void errorMessage(){
+         SerenityRest.then().body("message",equalTo("DATA_NOT_FOUND"));
      }
 }

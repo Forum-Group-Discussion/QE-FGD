@@ -22,6 +22,7 @@ starter\cucumberTestSuite.class
 starter\stepdefinitions\registrationStep.class
 starter\Thread\BodyThread.class
 starter\Thread\GetThread.class
+starter\LikeThread\GetDislikeThread.class
 starter\stepdefinitions\topicStepdefinitions.class
 starter\stepdefinitions\threadStep.class
 starter\stepdefinitions\likeThread.class

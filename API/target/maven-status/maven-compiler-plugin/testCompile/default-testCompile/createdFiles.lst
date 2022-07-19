@@ -17,6 +17,7 @@ starter\stepdefinitions\likeThread.class
 starter\Topic\PutTopic.class
 starter\Comments\GetCommentOnAThread.class
 starter\stepdefinitions\followingSteps.class
+starter\stepdefinitions\saveThread.class
 starter\LikeThread\PostLikesOnAThread.class
 starter\Autentikasi\BodyRegister.class
 starter\Thread\GetAllThread.class
@@ -33,6 +34,7 @@ starter\cucumberTestSuite.class
 starter\Thread\BodyThread.class
 starter\stepdefinitions\topicStepdefinitions.class
 starter\stepdefinitions\threadStep.class
+starter\SaveThread\PostSaveThread.class
 starter\stepdefinitions\reportComment.class
 starter\Comments\PostCommentOnThread.class
 starter\Users\UpdateUsers.class

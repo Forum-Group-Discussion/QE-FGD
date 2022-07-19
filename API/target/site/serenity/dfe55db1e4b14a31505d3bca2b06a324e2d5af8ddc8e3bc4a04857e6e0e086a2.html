@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8"/>
-    <title>GET - As a user i want to get dislike of thread</title>
+    <title>POST - As a user i am able to report Comment</title>
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
@@ -125,8 +125,8 @@
         <span class="breadcrumbs">
             <a href="index.html" class="breadcrumbs">Home</a>
 
-            > <a href="0cce21019d65a6105d12677e65a0e8b5fb46e6d2b9b3568856a89daa929adced.html">Like Thread</a>
-        > GET - As a user i want to get dislike of thread
+            > <a href="27b82c4c34a570ac67856db58b6bde8bff095da7e1bdea9690d4183aad49df63.html">Report Comment</a>
+        > POST - As a user i am able to report Comment
         </span>
         </div>
         <div class="rightbg"></div>
@@ -147,7 +147,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 19-07-2022 10:32</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 19-07-2022 16:31</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>
@@ -162,7 +162,7 @@
                                 <div>
                                     <h3 class="discreet-story-header">
                                         <i class="fa fa-2x fa-comments-o"></i>
-                                        <span class="story-header-title">Like Thread </span>
+                                        <span class="story-header-title">Report Comment </span>
                                     </h3>
 
                                 </div>
@@ -172,7 +172,7 @@
                                 <p class="tag">
                                     <span class="badge tag-badge" style="background:default;">
                                     <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;"
-                                                                      href="e8b215eb32f7378e6ef68d3d8e70020b703d2e32a487c2e23de116a3029029e7.html">Getdislikethread
+                                                                      href="26dc0683308031d1128a542dc44f0e5129da35305a28290e05aa0dec0c1e046d.html">Postreportcomment
                                     (tag)</a>
                                 </span>
                                 </p>
@@ -187,7 +187,7 @@
                             <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-times-circle failure-icon fa-2x' title='FAILURE'></i></a></span>
                             <span class="test-case-title">
                                 <span class="failing-color">
-                                    GET - As a user i want to get dislike of thread
+                                    POST - As a user i am able to report Comment
                                         <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -207,7 +207,7 @@
         <div class="story-title">
             <h3 class="story-header">Scenario Outline</h3>
 
-            <div class="scenario">Given I set an endpoint for dislike thread<br>When I set an endpoint for dislike thread with ID Thread &lt;id_thread&gt;<br>Then I validate the status code &lt;status_code&gt;<br>And I get the "&lt;result&gt;" result that i get number of dislike on the thread</div>
+            <div class="scenario">Given I set an endpoint for report comment<br>When I request POST for report with ID Comment &lt;id_comment&gt;<br>Then I validate the status code &lt;status_code&gt;<br>And I get the report type with "&lt;result&gt;" and "&lt;report_type&gt;" after reporting with &lt;id_comment&gt; ID Comment and user ID &lt;user_id&gt;</div>
 
         </div>
 
@@ -226,34 +226,66 @@
                     <thead>
                     <tr>
                         <th>#</th>
-                            <th>Id Thread</th>
+                            <th>Id Comment</th>
                             <th>Status Code</th>
                             <th>Result</th>
+                            <th>Report Type</th>
+                            <th>User</th>
                     </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td class="test-SUCCESS"><a href="#0">1</a></td>
-                                <td class="test-SUCCESS"><a
-                                            href="#0">7</a>
+                            <td class="test-FAILURE"><a href="#0">1</a></td>
+                                <td class="test-FAILURE"><a
+                                            href="#0">14</a>
                                 </td>
-                                <td class="test-SUCCESS"><a
+                                <td class="test-FAILURE"><a
                                             href="#0">200</a>
                                 </td>
-                                <td class="test-SUCCESS"><a
+                                <td class="test-FAILURE"><a
                                             href="#0">success</a>
+                                </td>
+                                <td class="test-FAILURE"><a
+                                            href="#0">This_thread_contains_inappropriate_and_Fraud_elements</a>
+                                </td>
+                                <td class="test-FAILURE"><a
+                                            href="#0">34</a>
                                 </td>
                         </tr>
                         <tr>
-                            <td class="test-FAILURE"><a href="#1">2</a></td>
-                                <td class="test-FAILURE"><a
-                                            href="#1">100</a>
+                            <td class="test-SUCCESS"><a href="#1">2</a></td>
+                                <td class="test-SUCCESS"><a
+                                            href="#1">11</a>
                                 </td>
-                                <td class="test-FAILURE"><a
+                                <td class="test-SUCCESS"><a
                                             href="#1">400</a>
                                 </td>
-                                <td class="test-FAILURE"><a
-                                            href="#1">data not found</a>
+                                <td class="test-SUCCESS"><a
+                                            href="#1">duplicate reporting</a>
+                                </td>
+                                <td class="test-SUCCESS"><a
+                                            href="#1">This_thread_contains_inappropriate_and_Fraud_elements</a>
+                                </td>
+                                <td class="test-SUCCESS"><a
+                                            href="#1">0</a>
+                                </td>
+                        </tr>
+                        <tr>
+                            <td class="test-SUCCESS"><a href="#2">3</a></td>
+                                <td class="test-SUCCESS"><a
+                                            href="#2">100</a>
+                                </td>
+                                <td class="test-SUCCESS"><a
+                                            href="#2">400</a>
+                                </td>
+                                <td class="test-SUCCESS"><a
+                                            href="#2">unavailable thread</a>
+                                </td>
+                                <td class="test-SUCCESS"><a
+                                            href="#2">This_thread_contains_inappropriate_and_Fraud_elements</a>
+                                </td>
+                                <td class="test-SUCCESS"><a
+                                            href="#2">0</a>
                                 </td>
                         </tr>
                     </tbody>
@@ -277,13 +309,13 @@
                     <td colspan="5"></td>
                 </tr>
 
-                    <tr class="test-SUCCESS">
+                    <tr class="test-FAILURE">
 
                         <td width="50" class="step-icon">
                             <a name="0"></a>
                                 <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0')"
                                    style="display:block">
-                                    <i class="fa fa-plus-square-o imgstepSection0 success-icon"
+                                    <i class="fa fa-plus-square-o imgstepSection0 failure-icon"
                                        style="margin-left: 20px; float:left; padding-right:5px"></i>
                                 </a>
                         </td>
@@ -293,7 +325,7 @@
                                 <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0')"
                                    style="display:block;">
                                     <span class="top-level-step">
-                                                1: GET - As a user i want to get dislike of thread ({id_thread=7, status_code=200, result=success})
+                                                1: POST - As a user i am able to report Comment ({id_comment=14, status_code=200, result=success, report_type=This_thread_contains_inappropriate_and_Fraud_elements, user_id=34})
                                         </span>
                                 </a>
                                 <span class="evidence">
@@ -301,8 +333,8 @@
                             </div>
                         </td>
 
-                        <td width="130"><span class="top-level-step">SUCCESS</span></td>
-                        <td width="100"><span class="top-level-step">12s 306ms</span></td>
+                        <td width="130"><span class="top-level-step">FAILURE</span></td>
+                        <td width="100"><span class="top-level-step">6s 149ms</span></td>
                     </tr>
                         <tr>
                             <td colspan="5">
@@ -319,7 +351,7 @@
                         <td class="step-description-column">
                             <div class="step-description">
                                     <span class="nested-group-step">
-                                                Given I set an endpoint for dislike thread
+                                                Given I set an endpoint for report comment
                                         </span>
                                 <span class="evidence">
                                 </span>
@@ -327,7 +359,7 @@
                         </td>
 
                         <td width="130"><span class="nested-group-step">SUCCESS</span></td>
-                        <td width="100"><span class="nested-group-step">154ms</span></td>
+                        <td width="100"><span class="nested-group-step">096ms</span></td>
                     </tr>
                     <tr class="test-SUCCESS">
 
@@ -345,7 +377,7 @@
                                 <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-1')"
                                    style="display:block;">
                                     <span class="nested-step">
-                                                When I set an endpoint for dislike thread with ID Thread 7
+                                                When I request POST for report with ID Comment 14
                                         </span>
                                 </a>
                                 <span class="evidence">
@@ -354,7 +386,7 @@
                         </td>
 
                         <td width="130"><span class="nested-step">SUCCESS</span></td>
-                        <td width="100"><span class="nested-step">10s 056ms</span></td>
+                        <td width="100"><span class="nested-step">4s 805ms</span></td>
                     </tr>
                         <tr>
                             <td colspan="5">
@@ -371,7 +403,7 @@
                         <td class="step-description-column">
                             <div class="step-description">
                                     <span class="nested-group-step">
-                                                GET http://44.206.244.111/v1/likethread/dislike
+                                                POST http://44.206.244.111/v1/reportcomment/
                                         </span>
                                 <span class="evidence">
                                         <span class="piece-of-evidence">
@@ -387,19 +419,19 @@
                             <div class="card">
                                 <div class="card-body">
                                     <h4>Response</h4>
-                                        <p>URL: http://44.206.244.111/v1/likethread/dislike</p>
+                                        <p>URL: http://44.206.244.111/v1/reportcomment/</p>
                                         <p>Status code: 200</p>
                                         <p>Content Type: application/json</p>
                                         <h4>Request Headers</h4>
-                                        <pre>Authorization=Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc0FkbWluIjp0cnVlLCJlbWFpbCI6ImFkbWluZm91bmRAZ21haWwuY29tIiwiaWF0IjoxNjU4MDQ3NzIyLCJleHAiOjM5NzkzMTQ1MzUxfQ.10Rxik_YwJFmKF1PpX7SlL4owjHnQB8YEcQkiypIo2k<br>Accept=*/*<br>Content-Type=application/json</pre>
+                                        <pre>Authorization=Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc0FkbWluIjp0cnVlLCJlbWFpbCI6InlvbGFuZGFNYW51cnVuZ0BnbWFpbC5jb20iLCJpYXQiOjE2NTgyMjIxOTUsImV4cCI6Mzk3OTczMzI2ODF9.2KjL0P3vMnGHSsAbThRDxUgTJn_pWvuXw5qLG5DFxpk<br>Accept=*/*<br>Content-Type=application/json</pre>
                                         <h4>Content Body</h4>
-                                        <pre>{<br>    &quot;id&quot;: 7<br>}</pre>
+                                        <pre>{<br>    &quot;comment&quot;: {<br>        &quot;id&quot;: 14<br>    },<br>    &quot;report_type&quot;: &quot;This_thread_contains_inappropriate_and_Fraud_elements&quot;<br>}</pre>
                                         <h4>Request Cookies</h4>
                                         <pre></pre>
                                         <h4>Response Headers</h4>
-                                        <pre>Access-Control-Allow-Methods: GET, POST, PATCH, PUT, DELETE, OPTIONS<br>Access-Control-Allow-Headers: x-requested-with, Authorization, Content-Type, credential, X-Import-Process, X-XSRF-TOKEN<br>Access-Control-Max-Age: 3600<br>Access-Control-Allow-Credentials: true<br>X-Content-Type-Options: nosniff<br>X-XSS-Protection: 1; mode=block<br>Cache-Control: no-cache, no-store, max-age=0, must-revalidate<br>Pragma: no-cache<br>Expires: 0<br>Content-Type: application/json<br>Transfer-Encoding: chunked<br>Date: Tue, 19 Jul 2022 03:33:56 GMT<br>Keep-Alive: timeout=60<br>Connection: keep-alive</pre>
+                                        <pre>Access-Control-Allow-Methods: GET, POST, PATCH, PUT, DELETE, OPTIONS<br>Access-Control-Allow-Headers: x-requested-with, Authorization, Content-Type, credential, X-Import-Process, X-XSRF-TOKEN<br>Access-Control-Max-Age: 3600<br>Access-Control-Allow-Credentials: true<br>X-Content-Type-Options: nosniff<br>X-XSS-Protection: 1; mode=block<br>Cache-Control: no-cache, no-store, max-age=0, must-revalidate<br>Pragma: no-cache<br>Expires: 0<br>Content-Type: application/json<br>Transfer-Encoding: chunked<br>Date: Tue, 19 Jul 2022 09:33:06 GMT<br>Keep-Alive: timeout=60<br>Connection: keep-alive</pre>
                                     <h4>Response Body</h4>
-                                        <pre>{<br>    &quot;localDateTime&quot;: &quot;19-07-2022 03:33:56&quot;,<br>    &quot;responseCode&quot;: &quot;200&quot;,<br>    &quot;message&quot;: &quot;SUCCESS&quot;,<br>    &quot;data&quot;: 0<br>}</pre>
+                                        <pre>{<br>    &quot;localDateTime&quot;: &quot;19-07-2022 09:33:06&quot;,<br>    &quot;responseCode&quot;: &quot;200&quot;,<br>    &quot;message&quot;: &quot;SUCCESS&quot;,<br>    &quot;data&quot;: {<br>        &quot;id&quot;: 2,<br>        &quot;comment&quot;: {<br>            &quot;id&quot;: 14,<br>            &quot;users&quot;: {<br>                &quot;id&quot;: 12,<br>                &quot;name&quot;: &quot;nelapardosi&quot;,<br>                &quot;ausername&quot;: null,<br>                &quot;email&quot;: &quot;adminfound@gmail.com&quot;,<br>                &quot;password&quot;: &quot;$2a$10$U3FKxIzyc.7oGG78s8Go3uJjSRy6OHZ8QFdjgBhDUQLauuw1J3gTm&quot;,<br>                &quot;image&quot;: &quot;129db30d-b7ac-4562-b18b-ca3d0b3a9423.jpg&quot;,<br>                &quot;bio&quot;: null,<br>                &quot;location&quot;: null,<br>                &quot;website&quot;: null,<br>                &quot;background_image&quot;: null,<br>                &quot;is_admin&quot;: true,<br>                &quot;is_suspended&quot;: false<br>            },<br>            &quot;thread&quot;: {<br>                &quot;id&quot;: 7,<br>                &quot;createdAt&quot;: &quot;2022-07-17T17:44:05.539224&quot;,<br>                &quot;updatedAt&quot;: &quot;2022-07-17T17:44:05.53923&quot;,<br>                &quot;users&quot;: {<br>                    &quot;id&quot;: 32,<br>                    &quot;name&quot;: &quot;Ihsan Fauzi&quot;,<br>                    &quot;ausername&quot;: null,<br>                    &quot;email&quot;: &quot;ihsanfa@gmail.com&quot;,<br>                    &quot;password&quot;: &quot;$2a$10$HtExpYzq5vpLs2jhka9QPeP3hrXO9oqCfrkc0p4owRCcC4pC.1mtu&quot;,<br>                    &quot;image&quot;: &quot;28d498cd-b70e-4955-aa68-106a2ebe50f8.jpg&quot;,<br>                    &quot;bio&quot;: null,<br>                    &quot;location&quot;: null,<br>                    &quot;website&quot;: null,<br>                    &quot;background_image&quot;: null,<br>                    &quot;is_admin&quot;: false,<br>                    &quot;is_suspended&quot;: false<br>                },<br>                &quot;title&quot;: &quot;Bahas Game Harvest Moon Gas&quot;,<br>                &quot;content&quot;: &quot;Games harvestmoooonnn&quot;,<br>                &quot;image&quot;: &quot;03ecc11d-70c8-49c5-8566-3ffa85d004a9.jpg&quot;,<br>                &quot;topic&quot;: {<br>                    &quot;id&quot;: 1,<br>                    &quot;topicName&quot;: &quot;Drama Korea&quot;<br>                }<br>            },<br>            &quot;comment&quot;: &quot;semangatt kaka pembuat thread, senang liat thread-thread kakak&quot;<br>        },<br>        &quot;user&quot;: {<br>            &quot;id&quot;: 34,<br>            &quot;name&quot;: &quot;YolandaManurung&quot;,<br>            &quot;ausername&quot;: null,<br>            &quot;email&quot;: &quot;yolandaManurung@gmail.com&quot;,<br>            &quot;password&quot;: &quot;$2a$10$RRsrjtgLnXltAZTZdYAgKu7TSbEGSSW2NnSftNa9OR87o0nnayh46&quot;,<br>            &quot;image&quot;: &quot;22e5507d-6f69-4ca9-bb37-c393e76f1466.jpg&quot;,<br>            &quot;bio&quot;: null,<br>            &quot;location&quot;: null,<br>            &quot;website&quot;: null,<br>            &quot;background_image&quot;: null,<br>            &quot;is_admin&quot;: true,<br>            &quot;is_suspended&quot;: false<br>        },<br>        &quot;report_type&quot;: &quot;This_thread_contains_inappropriate_and_Fraud_elements&quot;<br>    }<br>}</pre>
                                 </div>
                             </div>
                         </div>
@@ -410,7 +442,7 @@
                         </td>
 
                         <td width="130"><span class="nested-group-step">SUCCESS</span></td>
-                        <td width="100"><span class="nested-group-step"></span></td>
+                        <td width="100"><span class="nested-group-step">001ms</span></td>
                     </tr>
 
                                 </table>
@@ -436,41 +468,79 @@
                         </td>
 
                         <td width="130"><span class="nested-group-step">SUCCESS</span></td>
-                        <td width="100"><span class="nested-group-step">456ms</span></td>
+                        <td width="100"><span class="nested-group-step">234ms</span></td>
                     </tr>
-                    <tr class="test-SUCCESS">
+                    <tr class="test-FAILURE">
 
                         <td width="70" class="step-icon">
                             <a name="0-3"></a>
                                 <span style="margin-left: 40px;"
-                                      class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
+                                      class="nested-group-icon"><a href='##beforetable'><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i></a>
                                 </span>
                         </td>
 
                         <td class="step-description-column">
                             <div class="step-description">
                                     <span class="nested-group-step">
-                                                And I get the "success" result that i get number of dislike on the thread
+                                                And I get the report type with "success" and "This_thread_contains_inappropriate_and_Fraud_elements" after reporting with 14 ID Comment and user ID 34
                                         </span>
                                 <span class="evidence">
                                 </span>
                             </div>
                         </td>
 
-                        <td width="130"><span class="nested-group-step">SUCCESS</span></td>
-                        <td width="100"><span class="nested-group-step">1s 521ms</span></td>
+                        <td width="130"><span class="nested-group-step">FAILURE</span></td>
+                        <td width="100"><span class="nested-group-step">911ms</span></td>
                     </tr>
+                        <tr class="test-FAILURE">
+                            <td width="40">&nbsp</td>
+                            <td width="%" colspan="3" class="error-message-cell">
+
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">java.lang.AssertionError: 1 expectation failed.<br>JSON path data.comment.users.id doesn&#39;t match.<br>Expected: &lt;34&gt;<br>  Actual: &lt;12&gt;<br></span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-6""
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="far fa-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-6">
+            <div class="card">
+                <div class="card-header">
+                    <h4>java.lang.AssertionError </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)<br />io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:261)<br />io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:108)<br />io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)<br />io.restassured.internal.ValidatableResponseImpl.super$2$body(ValidatableResponseImpl.groovy:-1)<br />groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)<br />groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)<br />io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy:298)<br />io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy:-1)<br />starter.ReportComment.PostReportComment.validateDataDetailAfterReport(PostReportComment.java:38)<br />starter.stepdefinitions.reportComment.iGetTheReportTypeWithAndAfterReportingWithId_commentIDCommentAndUserIDUser_id(reportComment.java:25)<br />✽.I get the report type with "success" and "This_thread_contains_inappropriate_and_Fraud_elements" after reporting with 14 ID Comment and user ID 34(file:///D:/PERKULIAHAN/Semester%206,Hebatt%20glad!/QE-FGD/API/src/test/resources/features/reportComment.feature:11)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+                            </td>
+                        </tr>
 
                                 </table>
                             </td>
                         </tr>
-                    <tr class="test-FAILURE">
+                    <tr class="test-SUCCESS">
 
                         <td width="50" class="step-icon">
                             <a name="1"></a>
                                 <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1')"
                                    style="display:block">
-                                    <i class="fa fa-plus-square-o imgstepSection1 failure-icon"
+                                    <i class="fa fa-plus-square-o imgstepSection1 success-icon"
                                        style="margin-left: 20px; float:left; padding-right:5px"></i>
                                 </a>
                         </td>
@@ -480,7 +550,7 @@
                                 <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1')"
                                    style="display:block;">
                                     <span class="top-level-step">
-                                                2: GET - As a user i want to get dislike of thread ({id_thread=100, status_code=400, result=data not found})
+                                                2: POST - As a user i am able to report Comment ({id_comment=11, status_code=400, result=duplicate reporting, report_type=This_thread_contains_inappropriate_and_Fraud_elements, user_id=0})
                                         </span>
                                 </a>
                                 <span class="evidence">
@@ -488,8 +558,8 @@
                             </div>
                         </td>
 
-                        <td width="130"><span class="top-level-step">FAILURE</span></td>
-                        <td width="100"><span class="top-level-step">722ms</span></td>
+                        <td width="130"><span class="top-level-step">SUCCESS</span></td>
+                        <td width="100"><span class="top-level-step">674ms</span></td>
                     </tr>
                         <tr>
                             <td colspan="5">
@@ -506,7 +576,7 @@
                         <td class="step-description-column">
                             <div class="step-description">
                                     <span class="nested-group-step">
-                                                Given I set an endpoint for dislike thread
+                                                Given I set an endpoint for report comment
                                         </span>
                                 <span class="evidence">
                                 </span>
@@ -532,7 +602,7 @@
                                 <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1-1')"
                                    style="display:block;">
                                     <span class="nested-step">
-                                                When I set an endpoint for dislike thread with ID Thread 100
+                                                When I request POST for report with ID Comment 11
                                         </span>
                                 </a>
                                 <span class="evidence">
@@ -541,7 +611,7 @@
                         </td>
 
                         <td width="130"><span class="nested-step">SUCCESS</span></td>
-                        <td width="100"><span class="nested-step">566ms</span></td>
+                        <td width="100"><span class="nested-step">639ms</span></td>
                     </tr>
                         <tr>
                             <td colspan="5">
@@ -558,7 +628,7 @@
                         <td class="step-description-column">
                             <div class="step-description">
                                     <span class="nested-group-step">
-                                                GET http://44.206.244.111/v1/likethread/dislike
+                                                POST http://44.206.244.111/v1/reportcomment/
                                         </span>
                                 <span class="evidence">
                                         <span class="piece-of-evidence">
@@ -574,19 +644,19 @@
                             <div class="card">
                                 <div class="card-body">
                                     <h4>Response</h4>
-                                        <p>URL: http://44.206.244.111/v1/likethread/dislike</p>
-                                        <p>Status code: 200</p>
+                                        <p>URL: http://44.206.244.111/v1/reportcomment/</p>
+                                        <p>Status code: 400</p>
                                         <p>Content Type: application/json</p>
                                         <h4>Request Headers</h4>
-                                        <pre>Authorization=Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc0FkbWluIjp0cnVlLCJlbWFpbCI6ImFkbWluZm91bmRAZ21haWwuY29tIiwiaWF0IjoxNjU4MDQ3NzIyLCJleHAiOjM5NzkzMTQ1MzUxfQ.10Rxik_YwJFmKF1PpX7SlL4owjHnQB8YEcQkiypIo2k<br>Accept=*/*<br>Content-Type=application/json</pre>
+                                        <pre>Authorization=Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc0FkbWluIjp0cnVlLCJlbWFpbCI6InlvbGFuZGFNYW51cnVuZ0BnbWFpbC5jb20iLCJpYXQiOjE2NTgyMjIxOTUsImV4cCI6Mzk3OTczMzI2ODF9.2KjL0P3vMnGHSsAbThRDxUgTJn_pWvuXw5qLG5DFxpk<br>Accept=*/*<br>Content-Type=application/json</pre>
                                         <h4>Content Body</h4>
-                                        <pre>{<br>    &quot;id&quot;: 100<br>}</pre>
+                                        <pre>{<br>    &quot;comment&quot;: {<br>        &quot;id&quot;: 11<br>    },<br>    &quot;report_type&quot;: &quot;This_thread_contains_inappropriate_and_Fraud_elements&quot;<br>}</pre>
                                         <h4>Request Cookies</h4>
                                         <pre></pre>
                                         <h4>Response Headers</h4>
-                                        <pre>Access-Control-Allow-Methods: GET, POST, PATCH, PUT, DELETE, OPTIONS<br>Access-Control-Allow-Headers: x-requested-with, Authorization, Content-Type, credential, X-Import-Process, X-XSRF-TOKEN<br>Access-Control-Max-Age: 3600<br>Access-Control-Allow-Credentials: true<br>X-Content-Type-Options: nosniff<br>X-XSS-Protection: 1; mode=block<br>Cache-Control: no-cache, no-store, max-age=0, must-revalidate<br>Pragma: no-cache<br>Expires: 0<br>Content-Type: application/json<br>Transfer-Encoding: chunked<br>Date: Tue, 19 Jul 2022 03:33:58 GMT<br>Keep-Alive: timeout=60<br>Connection: keep-alive</pre>
+                                        <pre>Access-Control-Allow-Methods: GET, POST, PATCH, PUT, DELETE, OPTIONS<br>Access-Control-Allow-Headers: x-requested-with, Authorization, Content-Type, credential, X-Import-Process, X-XSRF-TOKEN<br>Access-Control-Max-Age: 3600<br>Access-Control-Allow-Credentials: true<br>X-Content-Type-Options: nosniff<br>X-XSS-Protection: 1; mode=block<br>Cache-Control: no-cache, no-store, max-age=0, must-revalidate<br>Pragma: no-cache<br>Expires: 0<br>Content-Type: application/json<br>Transfer-Encoding: chunked<br>Date: Tue, 19 Jul 2022 09:33:08 GMT<br>Connection: close</pre>
                                     <h4>Response Body</h4>
-                                        <pre>{<br>    &quot;localDateTime&quot;: &quot;19-07-2022 03:33:58&quot;,<br>    &quot;responseCode&quot;: &quot;200&quot;,<br>    &quot;message&quot;: &quot;SUCCESS&quot;,<br>    &quot;data&quot;: 0<br>}</pre>
+                                        <pre>{<br>    &quot;localDateTime&quot;: &quot;19-07-2022 09:33:08&quot;,<br>    &quot;responseCode&quot;: &quot;400&quot;,<br>    &quot;message&quot;: &quot;DATA_NOT_FOUND&quot;,<br>    &quot;data&quot;: null<br>}</pre>
                                 </div>
                             </div>
                         </div>
@@ -603,23 +673,123 @@
                                 </table>
                             </td>
                         </tr>
-                    <tr class="test-FAILURE">
+                    <tr class="test-SUCCESS">
 
                         <td width="70" class="step-icon">
                             <a name="1-2"></a>
-                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1-2')"
+                                <span style="margin-left: 40px;"
+                                      class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
+                                </span>
+                        </td>
+
+                        <td class="step-description-column">
+                            <div class="step-description">
+                                    <span class="nested-group-step">
+                                                Then I validate the status code 400
+                                        </span>
+                                <span class="evidence">
+                                </span>
+                            </div>
+                        </td>
+
+                        <td width="130"><span class="nested-group-step">SUCCESS</span></td>
+                        <td width="100"><span class="nested-group-step">007ms</span></td>
+                    </tr>
+                    <tr class="test-SUCCESS">
+
+                        <td width="70" class="step-icon">
+                            <a name="1-3"></a>
+                                <span style="margin-left: 40px;"
+                                      class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
+                                </span>
+                        </td>
+
+                        <td class="step-description-column">
+                            <div class="step-description">
+                                    <span class="nested-group-step">
+                                                And I get the report type with "duplicate reporting" and "This_thread_contains_inappropriate_and_Fraud_elements" after reporting with 11 ID Comment and user ID 0
+                                        </span>
+                                <span class="evidence">
+                                </span>
+                            </div>
+                        </td>
+
+                        <td width="130"><span class="nested-group-step">SUCCESS</span></td>
+                        <td width="100"><span class="nested-group-step">012ms</span></td>
+                    </tr>
+
+                                </table>
+                            </td>
+                        </tr>
+                    <tr class="test-SUCCESS">
+
+                        <td width="50" class="step-icon">
+                            <a name="2"></a>
+                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection2')"
                                    style="display:block">
-                                    <i class="fa fa-plus-square-o imgstepSection1-2 failure-icon"
+                                    <i class="fa fa-plus-square-o imgstepSection2 success-icon"
+                                       style="margin-left: 20px; float:left; padding-right:5px"></i>
+                                </a>
+                        </td>
+
+                        <td class="step-description-column">
+                            <div class="step-description">
+                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection2')"
+                                   style="display:block;">
+                                    <span class="top-level-step">
+                                                3: POST - As a user i am able to report Comment ({id_comment=100, status_code=400, result=unavailable thread, report_type=This_thread_contains_inappropriate_and_Fraud_elements, user_id=0})
+                                        </span>
+                                </a>
+                                <span class="evidence">
+                                </span>
+                            </div>
+                        </td>
+
+                        <td width="130"><span class="top-level-step">SUCCESS</span></td>
+                        <td width="100"><span class="top-level-step">623ms</span></td>
+                    </tr>
+                        <tr>
+                            <td colspan="5">
+                                <table id="stepSection2" class="step-table-nested" style="display:none;">
+                    <tr class="test-SUCCESS">
+
+                        <td width="70" class="step-icon">
+                            <a name="2-0"></a>
+                                <span style="margin-left: 40px;"
+                                      class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
+                                </span>
+                        </td>
+
+                        <td class="step-description-column">
+                            <div class="step-description">
+                                    <span class="nested-group-step">
+                                                Given I set an endpoint for report comment
+                                        </span>
+                                <span class="evidence">
+                                </span>
+                            </div>
+                        </td>
+
+                        <td width="130"><span class="nested-group-step">SUCCESS</span></td>
+                        <td width="100"><span class="nested-group-step">003ms</span></td>
+                    </tr>
+                    <tr class="test-SUCCESS">
+
+                        <td width="70" class="step-icon">
+                            <a name="2-1"></a>
+                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection2-1')"
+                                   style="display:block">
+                                    <i class="fa fa-plus-square-o imgstepSection2-1 success-icon"
                                        style="margin-left: 40px; float:left; padding-right:5px"></i>
                                 </a>
                         </td>
 
                         <td class="step-description-column">
                             <div class="step-description">
-                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1-2')"
+                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection2-1')"
                                    style="display:block;">
                                     <span class="nested-step">
-                                                Then I validate the status code 400
+                                                When I request POST for report with ID Comment 100
                                         </span>
                                 </a>
                                 <span class="evidence">
@@ -627,97 +797,112 @@
                             </div>
                         </td>
 
-                        <td width="130"><span class="nested-step">FAILURE</span></td>
-                        <td width="100"><span class="nested-step">110ms</span></td>
+                        <td width="130"><span class="nested-step">SUCCESS</span></td>
+                        <td width="100"><span class="nested-step">583ms</span></td>
                     </tr>
                         <tr>
                             <td colspan="5">
-                                <table id="stepSection1-2" class="step-table-nested" style="display:none;">
-                    <tr class="test-FAILURE">
+                                <table id="stepSection2-1" class="step-table-nested" style="display:none;">
+                    <tr class="test-SUCCESS">
 
                         <td width="90" class="step-icon">
-                            <a name="1-2-0"></a>
+                            <a name="2-1-0"></a>
                                 <span style="margin-left: 60px;"
-                                      class="nested-group-icon"><a href='##beforetable'><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i></a>
+                                      class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
                                 </span>
                         </td>
 
                         <td class="step-description-column">
                             <div class="step-description">
                                     <span class="nested-group-step">
-                                                Verify status code: 400
+                                                POST http://44.206.244.111/v1/reportcomment/
                                         </span>
                                 <span class="evidence">
+                                        <span class="piece-of-evidence">
+                    <span>
+                        <button type="button" class="btn btn-success btn-sm" data-toggle="collapse"
+                                data-target="#restModal-REST-16">
+                            REST Query
+                        </button>
+                    </span>
+                    <!-- Modal -->
+                    <div class="rest-query-details">
+                        <div class="collapse multi-collapse" id="restModal-REST-16">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4>Response</h4>
+                                        <p>URL: http://44.206.244.111/v1/reportcomment/</p>
+                                        <p>Status code: 400</p>
+                                        <p>Content Type: application/json</p>
+                                        <h4>Request Headers</h4>
+                                        <pre>Authorization=Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc0FkbWluIjp0cnVlLCJlbWFpbCI6InlvbGFuZGFNYW51cnVuZ0BnbWFpbC5jb20iLCJpYXQiOjE2NTgyMjIxOTUsImV4cCI6Mzk3OTczMzI2ODF9.2KjL0P3vMnGHSsAbThRDxUgTJn_pWvuXw5qLG5DFxpk<br>Accept=*/*<br>Content-Type=application/json</pre>
+                                        <h4>Content Body</h4>
+                                        <pre>{<br>    &quot;comment&quot;: {<br>        &quot;id&quot;: 100<br>    },<br>    &quot;report_type&quot;: &quot;This_thread_contains_inappropriate_and_Fraud_elements&quot;<br>}</pre>
+                                        <h4>Request Cookies</h4>
+                                        <pre></pre>
+                                        <h4>Response Headers</h4>
+                                        <pre>Access-Control-Allow-Methods: GET, POST, PATCH, PUT, DELETE, OPTIONS<br>Access-Control-Allow-Headers: x-requested-with, Authorization, Content-Type, credential, X-Import-Process, X-XSRF-TOKEN<br>Access-Control-Max-Age: 3600<br>Access-Control-Allow-Credentials: true<br>X-Content-Type-Options: nosniff<br>X-XSS-Protection: 1; mode=block<br>Cache-Control: no-cache, no-store, max-age=0, must-revalidate<br>Pragma: no-cache<br>Expires: 0<br>Content-Type: application/json<br>Transfer-Encoding: chunked<br>Date: Tue, 19 Jul 2022 09:33:08 GMT<br>Connection: close</pre>
+                                    <h4>Response Body</h4>
+                                        <pre>{<br>    &quot;localDateTime&quot;: &quot;19-07-2022 09:33:09&quot;,<br>    &quot;responseCode&quot;: &quot;400&quot;,<br>    &quot;message&quot;: &quot;DATA_NOT_FOUND&quot;,<br>    &quot;data&quot;: null<br>}</pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                        </span>
                                 </span>
                             </div>
                         </td>
 
-                        <td width="130"><span class="nested-group-step">FAILURE</span></td>
-                        <td width="100"><span class="nested-group-step">015ms</span></td>
+                        <td width="130"><span class="nested-group-step">SUCCESS</span></td>
+                        <td width="100"><span class="nested-group-step"></span></td>
                     </tr>
-                        <tr class="test-FAILURE">
-                            <td width="40">&nbsp</td>
-                            <td width="%" colspan="3" class="error-message-cell">
-
-
-    <div style="display:block">
-        <div class="table">
-            <div class="row">
-                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
-                    <span class="error-message error-message-title">java.lang.AssertionError: 1 expectation failed.<br>Expected status code &lt;400&gt; but was &lt;200&gt;.<br></span>
-                </div>
-                <div class="col-sm-2">
-                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-12""
-                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="far fa-eye"></i> More details</a>
-                </div>
-             </div>
-        </div>
-    <div>
-
-    <!-- Details Section -->
-    <div class="row stacktrace-details">
-      <div class="col">
-        <div class="collapse multi-collapse" id="stacktraceModal-12">
-            <div class="card">
-                <div class="card-header">
-                    <h4>java.lang.AssertionError </h4>
-                </div>
-                <div class="card-body">
-                    <div>
-                        <pre>io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)<br />io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)<br />io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:84)<br />io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy:-1)<br />groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)<br />groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)<br />io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:136)<br />io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:-1)<br />starter.Autentikasi.RegistrasiAdmin.verifyStatusCode(RegistrasiAdmin.java:40)<br />starter.stepdefinitions.registrationStep.iValidateTheStatusCodeStatus_code(registrationStep.java:30)<br />io.cucumber.java.Invoker.doInvoke(Invoker.java:66)<br />io.cucumber.java.Invoker.invoke(Invoker.java:24)<br />io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)<br />io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)<br />io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)<br />io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)<br />io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)<br />io.cucumber.core.runner.TestStep.run(TestStep.java:64)<br />io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)<br />io.cucumber.core.runner.TestCase.run(TestCase.java:104)<br />io.cucumber.core.runner.Runner.runPickle(Runner.java:73)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:258)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:57)<br /></pre>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-                            </td>
-                        </tr>
 
                                 </table>
                             </td>
                         </tr>
-                    <tr class="test-SKIPPED">
+                    <tr class="test-SUCCESS">
 
                         <td width="70" class="step-icon">
-                            <a name="1-3"></a>
+                            <a name="2-2"></a>
                                 <span style="margin-left: 40px;"
-                                      class="nested-group-icon"><a href='##beforetable'><i class='fa fa-fast-forward skipped-icon ' title='SKIPPED'></i></a>
+                                      class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
                                 </span>
                         </td>
 
                         <td class="step-description-column">
                             <div class="step-description">
                                     <span class="nested-group-step">
-                                                And I get the "data not found" result that i get number of dislike on the thread
+                                                Then I validate the status code 400
                                         </span>
                                 <span class="evidence">
                                 </span>
                             </div>
                         </td>
 
-                        <td width="130"><span class="nested-group-step">SKIPPED</span></td>
-                        <td width="100"><span class="nested-group-step">005ms</span></td>
+                        <td width="130"><span class="nested-group-step">SUCCESS</span></td>
+                        <td width="100"><span class="nested-group-step">007ms</span></td>
+                    </tr>
+                    <tr class="test-SUCCESS">
+
+                        <td width="70" class="step-icon">
+                            <a name="2-3"></a>
+                                <span style="margin-left: 40px;"
+                                      class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
+                                </span>
+                        </td>
+
+                        <td class="step-description-column">
+                            <div class="step-description">
+                                    <span class="nested-group-step">
+                                                And I get the report type with "unavailable thread" and "This_thread_contains_inappropriate_and_Fraud_elements" after reporting with 100 ID Comment and user ID 0
+                                        </span>
+                                <span class="evidence">
+                                </span>
+                            </div>
+                        </td>
+
+                        <td width="130"><span class="nested-group-step">SUCCESS</span></td>
+                        <td width="100"><span class="nested-group-step">018ms</span></td>
                     </tr>
 
                                 </table>
@@ -726,7 +911,7 @@
                 <tr class="test-FAILURE">
                         <td colspan="2"></td>
                     <td width="130"><span class="top-level-step"><em>FAILURE</em></span></td>
-                    <td width="100"><span class="top-level-step"><em>13.68s</em></span></td>
+                    <td width="100"><span class="top-level-step"><em>7.92s</em></span></td>
                 </tr>
 
             </table>

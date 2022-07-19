@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: Report Comment
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 8.62 s <<< FAILURE! - in Report Comment
+Report Comment.POST - As a user i am able to report Comment #1  Time elapsed: 7.134 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+JSON path data.comment.users.id doesn't match.
+Expected: <34>
+  Actual: <12>
+
+

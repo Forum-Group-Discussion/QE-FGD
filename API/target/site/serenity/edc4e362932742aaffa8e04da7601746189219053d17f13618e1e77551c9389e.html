@@ -154,9 +154,9 @@
     <div id="contenttop">
         <div class="middlebg">
         <span class="breadcrumbs"><a href="index.html">Home</a>
-                > Feature 
+                > Tag 
                 > <span
-                    class="truncate-60">Like Thread (Passing Tests)</span>
+                    class="truncate-60">Postreportcomment (Unsuccessful Tests)</span>
         </span>
         </div>
         <div class="rightbg"></div>
@@ -176,7 +176,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 19-07-2022 10:33</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 19-07-2022 16:32</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>
@@ -185,18 +185,18 @@
         <div class="middlb">
             <div class="table">
 
-                <h2><i class='fa fa-tags'></i> Feature: Like Thread (Passing Tests)</h2>
+                <h2><i class='fa fa-tags'></i> Tag: Postreportcomment (Unsuccessful Tests)</h2>
                 <table class='overview'>
                     <tr>
                         <td width="375px" valign="top">
                             <div class="test-count-summary">
                                 <div>
 
-                                0 tests
-                                    across 0 scenarios
+                                3 tests
+                                    across 1 scenario
 
                                      |
-                                        <a href="471c4631dcb1915c87298ceba400ba613db7c6974cd38295a6b7318f811748db.csv" title="Download CSV"> <i class="fa fa-download"
+                                        <a href="c9a5d44f478ae62bb089111cf1e72363cf32e78d9419b617a108766507f2d62d.csv" title="Download CSV"> <i class="fa fa-download"
                                                                                         title="Download CSV"></i></a>
 
                                     <p class="report-info"><i class="fas fa-info-circle"></i> Note that results include
@@ -226,6 +226,54 @@
                                             <div class="container-fluid">
                                                 <div class="row">
                                                     <div class="col-sm-4">
+                                                            <div style="width:300px;"
+                                                                 class="chart-container automated-and-manual-results">
+                                                                <div class="ct-chart ct-square"></div>
+                                                            </div>
+                                                            <script>
+
+                                                                var labels = ['67%', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '33%', ' ', ' ', ' ', ' ', ' '];
+                                                                // Our series array that contains series objects or in this case series data arrays
+
+                                                                var series = [{meta: 'Passing tests (automated)', value: 2}, {meta: 'Passing tests (manual)', value: 0}, {meta: 'Pending tests (automated)', value: 0}, {meta: 'Pending tests (manual)', value: 0}, {meta: 'Ignored tests (automated)', value: 0}, {meta: 'Ignored tests (manual)', value: 0}, {meta: 'Skipped tests (automated)', value: 0}, {meta: 'Skipped tests (manual)', value: 0}, {meta: 'Failing tests (automated)', value: 1}, {meta: 'Failing tests (manual)', value: 0}, {meta: 'Broken tests (automated)', value: 0}, {meta: 'Broken tests (manual)', value: 0}, {meta: 'Compromised tests (automated)', value: 0}, {meta: 'Compromised tests (manual)', value: 0}];
+
+                                                                // As options we currently only set a static size of 300x200 px. We can also omit this and use aspect ratio containers
+                                                                // as you saw in the previous example
+                                                                var options = {
+                                                                    width: 350,
+                                                                    height: 300
+                                                                };
+
+
+                                                                new Chartist.Pie('.ct-chart', {
+                                                                    series: series,
+                                                                    labels: labels
+                                                                }, {
+                                                                    plugins: [Chartist.plugins.tooltip()],
+                                                                    donut: true,
+                                                                    donutWidth: 60,
+                                                                    donutSolid: true,
+                                                                    startAngle: 270,
+                                                                    showLabel: true
+                                                                }, options);
+
+
+                                                                $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+                                                                    new Chartist.Pie('.ct-chart', {
+                                                                        series: series,
+                                                                        labels: labels
+                                                                    }, {
+                                                                        plugins: [Chartist.plugins.tooltip()],
+                                                                        donut: true,
+                                                                        donutWidth: 60,
+                                                                        donutSolid: true,
+                                                                        startAngle: 270,
+                                                                        showLabel: true
+                                                                    }, options);
+                                                                });
+
+
+                                                            </script>
                                                     </div>
                                                     <div class="col-sm-8">
 
@@ -240,11 +288,12 @@
                                                             </thead>
                                                             <tbody>
                                                             <tr>
-                                                                    <td class="aggregate-result-count"><i
-                                                                            class='fa fa-check-circle-o success-icon'></i>&nbsp;Passing
+                                                                    <td class="aggregate-result-count">
+                                                                        <a href="bfccd199868010c60cd237795931c044e2ef60b3be6aa7a452de058bb53482d2.html"><i
+                                                                                class='fa fa-check-circle-o success-icon'></i>&nbsp;Passing</a>
                                                                     </td>
-                                                                <td class="automated-stats">0</td>
-                                                                <td class="automated-stats"> </td>
+                                                                <td class="automated-stats">2</td>
+                                                                <td class="automated-stats">67%</td>
                                                             </tr>
                                                             <tr>
                                                                     <td class="aggregate-result-count"><i
@@ -268,17 +317,18 @@
                                                                 <td class="automated-stats"> </td>
                                                             </tr>
                                                             <tr>
-                                                                            <td colspan="3"><i
-                                                                                class='fa fa-times failure-icon'></i>&nbsp;<em>Unsuccessful</em></a>
+                                                                            <td colspan="3"><a
+                                                                                    href="edc4e362932742aaffa8e04da7601746189219053d17f13618e1e77551c9389e.html"><i
+                                                                                    class='fa fa-times failure-icon'></i>&nbsp;<em>Unsuccessful</em></a>
                                                                             </td>
                                                             </tr>
                                                             <tr>
-                                                                <td class="aggregate-result-count indented-error-category">
-                                                                    <i
-                                                                            class='fa fa-times-circle failure-icon'></i>&nbsp;Failed
-                                                                </td>
-                                                                <td class="automated-stats">0</td>
-                                                                <td class="automated-stats"> </td>
+                                                                    <td class="aggregate-result-count indented-error-category">
+                                                                        <a href="5476a5f1fa3b43292cc33a8c99e7b8bf011ff5450d0553cc9a88c39419467804.html"><i
+                                                                                class='fa fa-times-circle failure-icon'></i>&nbsp;Failed</a>
+                                                                    </td>
+                                                                <td class="automated-stats">1</td>
+                                                                <td class="automated-stats">33%</td>
                                                             <tr>
                                                                 <td class="aggregate-result-count indented-error-category">
                                                                     <i
@@ -296,7 +346,7 @@
                                                             </tr>
                                                             <tr class="summary-stats">
                                                                 <td class="aggregate-result-count">Total</td>
-                                                                <td class="automated-stats">0</td>
+                                                                <td class="automated-stats">3</td>
                                                                 <td class="automated-stats"></td>
                                                             </tr>
                                                             </tbody>
@@ -304,7 +354,61 @@
                                                     </div>
                                                 </div>
 
+                                                <div class="row">
+                                                    <div class="col-sm-6">
+                                                        <h3>Test Failure Overview</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-sm-6">
+                                                        <h4>Most Frequent Failures</h4>
+                                                        <table class="table">
+                                                            <tbody>
+                                                            <tr>
+                                                                <td class="failure-color top-list-title">
+                                                                    <a href="a0ace456df350117335ad374e8d62c0d8c978db868ea1469e0c5ba32aac965ea.html"><a href='##beforetable'><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i></a> Assertion error</a>
+                                                                </td>
+                                                                <td><span
+                                                                        class="badge failure-badge">1</span>
+                                                                </td>
+                                                            </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <h4>Most Unstable Features</h4>
+                                                        <table class="table">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td class="failure-color top-list-title"><a
+                                                                            href="27b82c4c34a570ac67856db58b6bde8bff095da7e1bdea9690d4183aad49df63.html">Report Comment</a>
+                                                                    </td>
+                                                                    <td><span
+                                                                            class="badge failure-badge">33%</span>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
 
+                                                <div class="row">
+                                                    <div class="col-sm-12">
+                                                        <h3>Tags</h3>
+
+                                                        <div class="card">
+                                                            <div class="card-body">
+                                                                <div>
+                                                                    <a href="26dc0683308031d1128a542dc44f0e5129da35305a28290e05aa0dec0c1e046d.html">
+                                                                        <span class="badge"
+                                                                              style="background-color:#f8001f; margin:1em;padding:4px;"><i
+                                                                                class="fa fa-tag"></i> Postreportcomment&nbsp;&nbsp;&nbsp;3</span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                         <div id="tests" class="tab-pane fade">
@@ -313,7 +417,34 @@
                                                     <div class="col-sm-12">
                                                         <h3><i class="fas fa-cogs"></i> Automated Tests</h3>
 
-                                            No automated tests were executed
+                                            <table class="scenario-result-table table" id="scenario-results">
+                                                <thead>
+                                                <tr>
+                                                    <th>feature</th>
+                                                    <th class="test-name-column">Scenario</th>
+                                                    <th>Steps</th>
+                                                    <th>Started</th>
+                                                    <th>Duration</th>
+                                                    <th>Result</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr class="scenario-result FAILURE">
+                                                    <td>
+                                                            <a href="27b82c4c34a570ac67856db58b6bde8bff095da7e1bdea9690d4183aad49df63.html">Report Comment</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="dfe55db1e4b14a31505d3bca2b06a324e2d5af8ddc8e3bc4a04857e6e0e086a2.html">POST - As a user i am able to report Comment</a>
+                                                                   (3 examples)
+                                                    </td>
+                                                    <td>4</td>
+                                                    <td>16:31:53</td>
+                                                    <td>7s 922ms</td>
+                                                    <td><a href='##beforetable'><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i></a> <span
+                                                            style="display:none">FAILURE</span></td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
 
                                                     </div>
                                                 </div>

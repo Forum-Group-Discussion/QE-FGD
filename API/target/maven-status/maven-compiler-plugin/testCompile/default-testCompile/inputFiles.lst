@@ -2,8 +2,10 @@ D:\PERKULIAHAN\Semester 6,Hebatt glad!\QE-FGD\API\src\test\java\starter\Topic\Pu
 D:\PERKULIAHAN\Semester 6,Hebatt glad!\QE-FGD\API\src\test\java\starter\Comments\DeleteCommentOnAThread.java
 D:\PERKULIAHAN\Semester 6,Hebatt glad!\QE-FGD\API\src\test\java\starter\stepdefinitions\likeThread.java
 D:\PERKULIAHAN\Semester 6,Hebatt glad!\QE-FGD\API\src\test\java\starter\Following\GetFollowingOnAccount.java
+D:\PERKULIAHAN\Semester 6,Hebatt glad!\QE-FGD\API\src\test\java\starter\stepdefinitions\reportThread.java
 D:\PERKULIAHAN\Semester 6,Hebatt glad!\QE-FGD\API\src\test\java\starter\Users\GetAllUsers.java
 D:\PERKULIAHAN\Semester 6,Hebatt glad!\QE-FGD\API\src\test\java\starter\Thread\BodyThread.java
+D:\PERKULIAHAN\Semester 6,Hebatt glad!\QE-FGD\API\src\test\java\starter\ReportThread\GetAllReport.java
 D:\PERKULIAHAN\Semester 6,Hebatt glad!\QE-FGD\API\src\test\java\starter\Topic\GetTopicById.java
 D:\PERKULIAHAN\Semester 6,Hebatt glad!\QE-FGD\API\src\test\java\starter\Autentikasi\BodyRegister.java
 D:\PERKULIAHAN\Semester 6,Hebatt glad!\QE-FGD\API\src\test\java\starter\LikeThread\PostLikesOnAThread.java
@@ -16,6 +18,7 @@ D:\PERKULIAHAN\Semester 6,Hebatt glad!\QE-FGD\API\src\test\java\starter\cucumber
 D:\PERKULIAHAN\Semester 6,Hebatt glad!\QE-FGD\API\src\test\java\starter\Topic\CreateTopic.java
 D:\PERKULIAHAN\Semester 6,Hebatt glad!\QE-FGD\API\src\test\java\starter\stepdefinitions\loginSteps.java
 D:\PERKULIAHAN\Semester 6,Hebatt glad!\QE-FGD\API\src\test\java\starter\Users\GetUsersById.java
+D:\PERKULIAHAN\Semester 6,Hebatt glad!\QE-FGD\API\src\test\java\starter\ReportComment\PostReportComment.java
 D:\PERKULIAHAN\Semester 6,Hebatt glad!\QE-FGD\API\src\test\java\starter\Thread\GetAllThread.java
 D:\PERKULIAHAN\Semester 6,Hebatt glad!\QE-FGD\API\src\test\java\utils\General.java
 D:\PERKULIAHAN\Semester 6,Hebatt glad!\QE-FGD\API\src\test\java\starter\stepdefinitions\userStep.java
@@ -24,6 +27,8 @@ D:\PERKULIAHAN\Semester 6,Hebatt glad!\QE-FGD\API\src\test\java\starter\Thread\C
 D:\PERKULIAHAN\Semester 6,Hebatt glad!\QE-FGD\API\src\test\java\starter\Autentikasi\Login.java
 D:\PERKULIAHAN\Semester 6,Hebatt glad!\QE-FGD\API\src\test\java\starter\stepdefinitions\threadStep.java
 D:\PERKULIAHAN\Semester 6,Hebatt glad!\QE-FGD\API\src\test\java\starter\Comments\PostCommentOnThread.java
+D:\PERKULIAHAN\Semester 6,Hebatt glad!\QE-FGD\API\src\test\java\starter\ReportThread\PostReportThread.java
+D:\PERKULIAHAN\Semester 6,Hebatt glad!\QE-FGD\API\src\test\java\starter\stepdefinitions\reportComment.java
 D:\PERKULIAHAN\Semester 6,Hebatt glad!\QE-FGD\API\src\test\java\starter\Users\UpdateUsers.java
 D:\PERKULIAHAN\Semester 6,Hebatt glad!\QE-FGD\API\src\test\java\starter\LikeThread\GetAllLikesOnAthread.java
 D:\PERKULIAHAN\Semester 6,Hebatt glad!\QE-FGD\API\src\test\java\starter\Autentikasi\RegistrasiAdmin.java

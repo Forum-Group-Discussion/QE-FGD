@@ -71,8 +71,10 @@ public class RegisterPage extends BasePageObject {
 
     public void inputEmail(String input) throws InterruptedException {
         click(fieldEmail());
-        if (input.equals("same")){
+        if (input.equals("sonyaprds@gmail.com")){
             this.input = "sonyaprds@gmail.com";
+        } else if (input.equals(null)){
+            this.input = null;
         } else{
             this.input = general.randomEmail();
             try (FileWriter file = new FileWriter("src//main//resources//filejson//email.json")) {

@@ -21,13 +21,11 @@ public class LoginSteps {
 
     @When("i input {string} username")
     public void iInputUsername(String email) throws Exception {
-
         loginPage.inputEmail(email);
     }
 
     @And("i input {string} password")
     public void iInputPassword(String password) throws Exception {
-
         loginPage.inputPassword(password);
     }
 

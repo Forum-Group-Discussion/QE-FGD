@@ -18,7 +18,7 @@ public class AndroidDriverInit {
         caps.setCapability("AutomationName", "UIAutomator2");
         caps.setCapability("unicodeKeyboard",true);
         caps.setCapability("resetKeyboard",true);
-        caps.setCapability("app", "C:\\Users\\ASUS\\Downloads\\app-release.apk");
+        caps.setCapability("app", "C:\\Users\\ASUS\\Downloads\\Forum-Group-Discussion.apk");
 
         try{
             driver = new AndroidDriver<AndroidElement>(new URL("http://0.0.0.0:4723/wd/hub"),caps);

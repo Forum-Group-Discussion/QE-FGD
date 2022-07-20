@@ -1,0 +1,15 @@
+success 200
+duplikaat 400
+unav id 400 data not found 
+
+
+data user id = 12
+data threads id = 11
+
+Besok mau dikerjain : 
+1. Bereskan Test case di spread
+2. Buat script untuk web ffilter topik, create thread
+3. Buat script mobile fitur logout dan liat profile
+4. Fix kan API(tuliskan yang perlu-perlu di ganti" nnntu)Buat CI/CD
+5.Buat Slide
+

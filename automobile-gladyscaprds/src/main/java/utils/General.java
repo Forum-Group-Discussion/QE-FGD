@@ -6,6 +6,6 @@ public class General {
     Random rand = new Random();
 
     public String randomEmail(){
-        return "gladys" + + rand.nextInt(1000) + "@gmail.com";
+        return "cleoparta" + + rand.nextInt(1000) + "@gmail.com";
     }
 }

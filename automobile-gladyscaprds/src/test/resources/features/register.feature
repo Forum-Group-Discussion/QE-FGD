@@ -18,5 +18,16 @@ Feature: Registration
 
     Examples:
       |username|email|password|confirm password|result|
-      |kowboy|kowboy@gmail.com|kowboy|kowboy|new user|
-
+      |Martin|martin@gmail.com|Martin1511|Martin1511|new user|
+      |Joshua|joshua@gmail.com|           |          |registration page|
+      |      |joshua@gmail.com|Joshua2001 |Joshua2001|registration page|
+      |Joshua|                |Joshua2001 |Joshua2001|registration page|
+      |      |                |           |          |registration page|
+      |      |                |Joshua2001 |Joshua2001|registration page|
+      |Joshua|                |           |          |registration page|
+      |      |joshua@gmail.com|           |Joshua2001|registration page|
+      |      |joshua@gmail.com|           |Joshua2001|registration page|
+      |sonyapardosi|sonyaprds@gmail.com|Sonya1511|Sonya1511|registration page|
+      |nelapardosi |sonyaprds@gmail.com|Nela1511|Nela1511|registration page|
+      |Martin|martinsiahaan@gmail.com|Martin1511|Martin1511|new user|
+      |sonyapardosi|sonyaprds@gmail.com|SonyaAhnela1511|SonyaAhnela1511|registration page|

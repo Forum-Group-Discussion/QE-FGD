@@ -4,9 +4,7 @@ import com.example.app.base.BasePageObject;
 import io.appium.java_client.android.AndroidElement;
 import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.By;
-
 import static com.example.app.driver.AndroidDriverInit.driver;
-
 
 public class LoginPage extends BasePageObject {
 

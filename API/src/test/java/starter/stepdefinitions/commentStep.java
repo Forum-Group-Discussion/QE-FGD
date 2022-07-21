@@ -55,16 +55,21 @@ public class commentStep {
     }
 
 
-    @Given("I set an endpoint for delete comments by ID Thread {int}")
-    public void iSetAnEndpointForDeleteCommentsByIDThreadId_thread(int id_comment) {
+
+
+
+
+
+
+    @Given("I set an endpoint for delete comments by ID Comment {int}")
+    public void iSetAnEndpointForDeleteCommentsByIDCommentId_comment(int id_comment) {
         deleteCommentOnAThread.endpointDeleteComment(id_comment);
     }
 
-    @When("I request DELETE Comment by ID Thread {int}")
-    public void iRequestDELETECommentByIDThreadId_thread(int id_comment) throws IOException {
+    @When("I request DELETE Comment by ID Comment {int}")
+    public void iRequestDELETECommentByIDCommentId_comment(int id_comment) throws IOException {
         deleteCommentOnAThread.requestDeleteCommentById(id_comment);
     }
-
 
     @And("I get the result for comment")
     public void iGetTheResultForComment(){
@@ -79,4 +84,6 @@ public class commentStep {
             deleteCommentOnAThread.errorMessage();
         }
     }
+
+
 }

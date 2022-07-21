@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: Like Thread
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 13.4 s <<< FAILURE! - in Like Thread
+Like Thread.GET - As a user i want to see Like on a thread #2  Time elapsed: 0.724 s  <<< ERROR!
+net.serenitybdd.core.exceptions.SerenityManagedException: 
+1 expectation failed.
+Expected status code <400> but was <200>.
+
+
+Like Thread.GET - As a user i want to get dislike of thread #2  Time elapsed: 0.725 s  <<< ERROR!
+net.serenitybdd.core.exceptions.SerenityManagedException: 
+1 expectation failed.
+Expected status code <400> but was <200>.
+
+

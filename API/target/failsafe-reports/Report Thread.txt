@@ -1,0 +1,18 @@
+-------------------------------------------------------------------------------
+Test set: Report Thread
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 1, Errors: 1, Skipped: 0, Time elapsed: 10.472 s <<< FAILURE! - in Report Thread
+Report Thread.POST - As a user i am able to report thread #1  Time elapsed: 8.206 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+JSON path data.thread.users.id doesn't match.
+Expected: <68>
+  Actual: <12>
+
+
+Report Thread.POST - As a user i am able to report thread #2  Time elapsed: 1.245 s  <<< ERROR!
+net.serenitybdd.core.exceptions.SerenityManagedException: 
+1 expectation failed.
+Expected status code <400> but was <200>.
+
+

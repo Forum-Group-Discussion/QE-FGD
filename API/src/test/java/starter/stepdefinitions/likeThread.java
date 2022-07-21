@@ -15,6 +15,11 @@ public class likeThread {
     GetAllLikesOnAthread getAllLikesOnAthread = new GetAllLikesOnAthread();
     GetDislikeThread getDislikeThread = new GetDislikeThread();
 
+    @Given("I set an endpoint for liking on a thread")
+    public void iSetAnEndpointForLikingOnAThread() {
+        postLikesOnAThread.endpointLikeThread();
+
+    }
 
     @When("I request like on a thread by ID thread {int}")
     public void iRequestLikeOnAThreadByIDThreadId_thread(int id_thread) throws IOException {
@@ -69,4 +74,7 @@ public class likeThread {
             getDislikeThread.errorMessage();
         }
     }
+
+
+
 }

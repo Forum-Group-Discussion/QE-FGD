@@ -4,16 +4,16 @@ Feature: Like Thread
   so that the thread can get likes from all users
 
   @POSTLikeAThread
-  Scenario Outline: POST - As a user i want to give comments on a thread
-    Given I set an endpoint for make a thread on a comment
+  Scenario Outline: POST - As a user i want to give like on a thread
+    Given I set an endpoint for liking on a thread
     When I request like on a thread by ID thread <id_thread>
     Then I validate the status code <status_code>
     And I get the "<result>" result that i like the thread <id_thread>
 
     Examples:
     |id_thread|status_code|result|
-    |7        |200        |success|
-    |7        |200        |duplicate|
+    |22        |200        |success|
+    |22        |200        |duplicate|
     |100      |400        |data not found|
 
     @GETLikeThread
@@ -25,7 +25,7 @@ Feature: Like Thread
 
       Examples:
         |id_thread|status_code|result|
-        |7        |200        |success|
+        |36        |200        |success|
         |100      |400        |data not found|
 
 
@@ -38,7 +38,7 @@ Feature: Like Thread
 
         Examples:
           |id_thread|status_code|result|
-          |7        |200        |success|
+          |24       |200        |success|
           |100      |400        |data not found|
 
 

@@ -1,0 +1,5 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"thread","POST - As a user i am able to make a thread","SUCCESS","2022-07-21T16:02:09.6003157+07:00[Asia/Jakarta]","0.0","10.73"
+"thread","POST - As a user i am not able to make a thread with Invalid Data","SUCCESS","2022-07-21T16:02:20.3478985+07:00[Asia/Jakarta]","0.0","7.5"
+"thread","GET - As a user i am able to get detail thread","SUCCESS","2022-07-21T16:02:27.8593987+07:00[Asia/Jakarta]","0.0","2.59"
+"thread","GET- As a user i am able to get list all thread","SUCCESS","2022-07-21T16:02:30.4566738+07:00[Asia/Jakarta]","0.0","1.86"

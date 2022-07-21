@@ -39,7 +39,7 @@ Feature: thread
 
         Examples:
         |id_thread|token|status_code|detail_thread|
-        |1        |valid|200        |success      |
+        |27        |valid|200        |success      |
         |Covid1   |valid|400        |bad request  |
         |100      |valid|400        |data_not_found|
         |1        |invalid|400        |invalid token      |

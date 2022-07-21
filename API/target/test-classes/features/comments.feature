@@ -12,10 +12,10 @@ Feature: Comment
 
     Examples:
    |id_thread|status_code|result|
-    |8        | 200       |success|
+    |31        | 200       |success|
     |100      | 400       |failed |
 
-    @GetCommentSByIdThread
+    @GetCommentSByIdComment
     Scenario Outline: Get Comments By id thread
       Given I set an endpoint for GET comment by ID thread <id_thread>
       When I request GET comment by ID thread <id_thread>
@@ -24,19 +24,19 @@ Feature: Comment
 
       Examples:
       |id_thread|status_code|result|
-      |15|200|success|
+      |27|200|success|
       |2|400|data not found|
 
 
       @DeleteCommentsById
       Scenario Outline: Delete comments By Id comments
-        Given I set an endpoint for delete comments by ID Thread <id_thread>
-        When I request DELETE Comment by ID Thread <id_thread>
+        Given I set an endpoint for delete comments by ID Comment <id_comment>
+        When I request DELETE Comment by ID Comment <id_comment>
         Then I validate the status code <status_code>
         And I get the "<result>" for comment
 
         Examples:
-          |id_thread|status_code|result|
-          |19|200|success              |
+          |id_comment|status_code|result|
+          |41|200|success              |
           |2|400|data not found        |
 

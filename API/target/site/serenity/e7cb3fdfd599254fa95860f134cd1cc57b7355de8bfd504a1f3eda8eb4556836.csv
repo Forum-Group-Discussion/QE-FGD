@@ -1,0 +1,2 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"user","GET - As a user i cannot to get a user detail without token","SUCCESS","2022-07-21T16:02:19.9244229+07:00[Asia/Jakarta]","0.0","0.66"

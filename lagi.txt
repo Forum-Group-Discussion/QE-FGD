@@ -1,0 +1,61 @@
+====Token Without Following (id =70)
+
+{"name":"ahnelapardosi","email":"ahnelapardosi@gmail.com","password":"ahnelapardosi1511", 
+"is_admin":true}
+
+{
+"email":"ahnelapardosi@gmail.com",
+"password":"Ahnelapardosi1511"
+}
+
+
+===Token for reporting thread and save thread and report comment (id=68)
+
+{
+    "email":"paulina@gmail.com","password":"paulinaSomi1511"
+}
+
+
+===Token for normal (Following,like thread) id(69)
+
+"email":"samuelpardosi@gmail.com","password":"Samuelpardosi1511"
+
+
+Like Thread : 2 Failed dan topik memang bug
+
+
+
+
+
+Fitur save thread (Cuman satu kali nge save) : 
+pakai akun : token for reporting
+
+Fitur user : aman
+
+Fitur thread : lihat id user yang valid, ganti di file object untuk validatedatadetail juga biar ngevalidasi equalsnya 
+
+ Fitur topic aman 
+
+Fitur report thread : 
+-lihat id thread yang mau di report
+-lihat id user yang mereport
+
+
+Fitur Report Comment : 
+-lihat id-comment
+-lihat id user yang nge komen sesuaikan
+
+
+Fitur Like thread (login normal)
+-siapkan satu thread untuk di like biar get like nya 1 juga
+-itu emang ada 1 yangfailed krn data yang ga available bisa sukceess
+
+
+Fitur Follow 
+-ganti user id sesuai akun yang dipake
+
+
+Fitur COMMENT DI THREAD :
+uah aman
+
+

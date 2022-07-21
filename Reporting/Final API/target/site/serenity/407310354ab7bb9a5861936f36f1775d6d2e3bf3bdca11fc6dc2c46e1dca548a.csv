@@ -1,0 +1,7 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"user","GET - As a user i have to be able to get all user","SUCCESS","2022-07-21T16:02:09.4557688+07:00[Asia/Jakarta]","0.0","7.21"
+"user","GET - As a user i cannot get all user without token","SUCCESS","2022-07-21T16:02:16.7382943+07:00[Asia/Jakarta]","0.0","1.02"
+"user","GET - AS a user i want to get a user detail","SUCCESS","2022-07-21T16:02:17.7980188+07:00[Asia/Jakarta]","0.0","2.11"
+"user","GET - As a user i cannot to get a user detail without token","SUCCESS","2022-07-21T16:02:19.9244229+07:00[Asia/Jakarta]","0.0","0.66"
+"user","POST - As a user i cannot use post method to get detail user","SUCCESS","2022-07-21T16:02:20.6070859+07:00[Asia/Jakarta]","0.0","0.65"
+"user","PUT - As a user i can update my profile","SUCCESS","2022-07-21T16:02:21.2854093+07:00[Asia/Jakarta]","0.0","1.33"

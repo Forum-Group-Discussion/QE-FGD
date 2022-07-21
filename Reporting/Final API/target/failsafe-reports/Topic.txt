@@ -1,0 +1,18 @@
+-------------------------------------------------------------------------------
+Test set: Topic
+-------------------------------------------------------------------------------
+Tests run: 12, Failures: 1, Errors: 1, Skipped: 0, Time elapsed: 17.169 s <<< FAILURE! - in Topic
+Topic.POST - As a user i am able to make a topic of thread #2  Time elapsed: 1.416 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+JSON path message doesn't match.
+Expected: data duplicate
+  Actual: DATA_NOT_FOUND
+
+
+Topic.POST - As a user i am able to make a topic of thread #3  Time elapsed: 0.798 s  <<< ERROR!
+net.serenitybdd.core.exceptions.SerenityManagedException: 
+1 expectation failed.
+Expected status code <500> but was <400>.
+
+

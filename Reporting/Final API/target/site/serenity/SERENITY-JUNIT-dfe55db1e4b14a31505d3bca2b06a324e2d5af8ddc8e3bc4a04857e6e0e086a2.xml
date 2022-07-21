@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Report Comment" skipped="0" tests="3" time="9.56" timestamp="2022-07-21 04:02:09"><testcase name="POST - As a user i am able to report Comment"><failure message="1 expectation failed.&#10;JSON path data.comment.users.id doesn't match.&#10;Expected: &lt;68&gt;&#10;  Actual: &lt;52&gt;&#10;" type="java.lang.AssertionError">1 expectation failed.
+JSON path data.comment.users.id doesn't match.
+Expected: &lt;68&gt;
+  Actual: &lt;52&gt;
+</failure><system-err>1 expectation failed.
+JSON path data.comment.users.id doesn't match.
+Expected: &lt;68&gt;
+  Actual: &lt;52&gt;
+&#13;
+io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)&#13;
+io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:261)&#13;
+io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:108)&#13;
+io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)&#13;
+io.restassured.internal.ValidatableResponseImpl.super$2$body(ValidatableResponseImpl.groovy)&#13;
+groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)&#13;
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)&#13;
+io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy:298)&#13;
+io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy)&#13;
+API@1.0-SNAPSHOT/starter.ReportComment.PostReportComment.validateDataDetailAfterReport(PostReportComment.java:38)&#13;
+API@1.0-SNAPSHOT/starter.stepdefinitions.reportComment.iGetTheReportTypeWithAndAfterReportingWithId_commentIDCommentAndUserIDUser_id(reportComment.java:25)&#13;
+✽.I get the report type with "success" and "This_thread_contains_inappropriate_and_Fraud_elements" after reporting with 40 ID Comment and user ID 68(file:///D:/PERKULIAHAN/Semester%206,Hebatt%20glad!/QE-FGD/API/src/test/resources/features/reportComment.feature:11)&#13;
+</system-err></testcase></testsuite>

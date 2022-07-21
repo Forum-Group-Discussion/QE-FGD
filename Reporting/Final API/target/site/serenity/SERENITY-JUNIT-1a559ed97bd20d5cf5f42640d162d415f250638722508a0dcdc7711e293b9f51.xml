@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="2" name="Topic" skipped="0" tests="12" time="15.97" timestamp="2022-07-21 04:02:09"><testcase name="POST - As a user i am able to make a topic of thread"><failure message="1 expectation failed.&#10;JSON path message doesn't match.&#10;Expected: data duplicate&#10;  Actual: DATA_NOT_FOUND&#10;" type="java.lang.AssertionError">1 expectation failed.
+JSON path message doesn't match.
+Expected: data duplicate
+  Actual: DATA_NOT_FOUND
+</failure><system-err>1 expectation failed.
+JSON path message doesn't match.
+Expected: data duplicate
+  Actual: DATA_NOT_FOUND
+&#13;
+io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)&#13;
+io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:261)&#13;
+io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:108)&#13;
+io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)&#13;
+io.restassured.internal.ValidatableResponseImpl.super$2$body(ValidatableResponseImpl.groovy)&#13;
+groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)&#13;
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)&#13;
+io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy:298)&#13;
+io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy)&#13;
+API@1.0-SNAPSHOT/starter.Topic.CreateTopic.errorMessageTopic(CreateTopic.java:68)&#13;
+API@1.0-SNAPSHOT/starter.stepdefinitions.topicStepdefinitions.iValidateThe(topicStepdefinitions.java:46)&#13;
+✽.I validate the "duplicate"(file:///D:/PERKULIAHAN/Semester%206,Hebatt%20glad!/QE-FGD/API/src/test/resources/features/topic.feature:11)&#13;
+</system-err></testcase><testcase name="GET - As a user i have to be able to get all topic"/><testcase name="GET - As a user i cannot get list topic with invalid token"/><testcase name="GET - As a user i have to be able to get topic by id"/><testcase name="PUT - As a user i want to update topic name for thread"/></testsuite>

@@ -17,6 +17,16 @@ Feature: Registration
     Examples:
       |username|email|password|confirm password|result|
       |sonyaprds|sonya@gmail.com|SonyaPrds1511|SonyaPrds1511|new user|
+      |         |sonya@gmail.com|SonyaPrds1511|SonyaPrds1511|register page|
+      |sonyaprds|         |SonyaPrds1511|SonyaPrds1511|null|
+      |sonyaprds|sonya@gmail.com|        |SonyaPrds1511|register page|
+      |sonyaprds|sonya@gmail.com|SonyaPrds1511|        |register page|
+      |sonyaprds|sonya@gmail.com|SonyaPrds1511|SonyaPrds1|register page|
+      |               |               |        |          |null|
+      |son             |sonya@gmail.com|SonyaPrds1511|SonyaPrds1|register page|
+      |sonyaprds  |sonya@gmailcom|SonyaPrds1511|SonyaPrds1|register page|
+      |sonyaprds  |sonya@gmailcom|SonyaPrds|SonyaPrds1|register page|
+
 
 
 

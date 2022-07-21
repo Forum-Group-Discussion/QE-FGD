@@ -35,7 +35,7 @@ public class RegisterPage extends PageObject {
     }
 
     private By fieldEmail(){
-        return By.id("email");
+        return By.xpath("//*[@id='email']");
     }
 
     private By fieldPassword(){
@@ -97,19 +97,13 @@ public class RegisterPage extends PageObject {
 
     @Step
     public void inputFieldEmail(String email){
-        if (email.equals("same")){
-            this.email = "adminfound@gmail.com";
-        } else if (email.equals("sonya@gmailcom")){
             this.email = general.randomEmail();
-            try (FileWriter file = new FileWriter("src//test//resources//filejson//email.json")) {
-                file.write(this.email);
-                file.flush();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }else{
-            this.email = "";
-        }
+        $(fieldEmail()).type(this.email);
+    }
+
+    @Step
+    public void inputFieldEmailNull(String email){
+        this.email = " ";
         $(fieldEmail()).type(this.email);
     }
 

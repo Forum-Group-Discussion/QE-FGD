@@ -32,7 +32,12 @@ public class registerSteps{
     @And("i input {string} and {string} and {string} and {string}")
     public void iInputAndAndAnd(String username, String email, String password, String confirmPass) {
         registerPage.inputFieldUsername(username);
+
+        if(email.equals("null")){
+            registerPage.inputFieldEmailNull(email);
+        }else{
         registerPage.inputFieldEmail(email);
+        }
         registerPage.inputFieldPassword(password);
         registerPage.inputFieldConfirmPassword(confirmPass);
     }

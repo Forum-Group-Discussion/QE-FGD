@@ -6,7 +6,7 @@ import org.openqa.selenium.By;
 
 public class LoginPage extends PageObject {
     private By loginForm(){
-        return By.xpath("//*[@id=\"root\"]/div/div/h1");
+        return By.xpath("//h1[text()='Sign In']");
     }
     private By fieldEmail(){
         return By.xpath("//*[@name=\"email\"]");

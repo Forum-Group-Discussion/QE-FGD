@@ -3,13 +3,12 @@ package starter.pages;
 import net.serenitybdd.core.pages.PageObject;
 import net.thucydides.core.annotations.Step;
 import org.openqa.selenium.By;
-import util.General;
-
+import utils.General;
 import java.io.FileWriter;
 import java.io.IOException;
 
 public class RegisterPage extends PageObject {
-
+    LoginPage loginPage;
     General general = new General();
     String username;
     String email;
@@ -36,7 +35,7 @@ public class RegisterPage extends PageObject {
     }
 
     private By fieldEmail(){
-        return By.xpath("//*[@name=\"email\"]");
+        return By.id("email");
     }
 
     private By fieldPassword(){
@@ -57,7 +56,7 @@ public class RegisterPage extends PageObject {
 
     @Step
     public void openUrl(){
-        openUrl("https://fgd-found.netlify.app/");
+        openUrl("https://found-capstone20.netlify.app/");
     }
 
     @Step
@@ -78,7 +77,7 @@ public class RegisterPage extends PageObject {
 
     @Step
     public void inputFieldUsername(String username){
-        if (username.equals("same")){
+        if(username.equals("same")){
             this.username = "adminfound";
         } else if(username.equals("sonyaprds")){
             this.username = general.randomUsername();
@@ -90,6 +89,7 @@ public class RegisterPage extends PageObject {
             }
         }else{
             this.username = "";
+
         }
         $(fieldUsername()).type(this.username);
 

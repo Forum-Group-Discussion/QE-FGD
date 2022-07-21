@@ -6,7 +6,6 @@ Feature: Login
   Background:
     Given i have registered
 
-
   @login
   Scenario Outline: Login scenario
     When i click get started

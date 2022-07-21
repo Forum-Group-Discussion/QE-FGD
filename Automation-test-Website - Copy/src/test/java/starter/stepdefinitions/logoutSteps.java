@@ -3,18 +3,17 @@ package starter.stepdefinitions;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import net.serenitybdd.core.pages.PageObject;
 import starter.pages.HomePage;
 import starter.pages.LoginPage;
 import starter.pages.RegisterPage;
 
-public class logoutSteps extends PageObject {
-
-    HomePage homePage = new HomePage();
-    LoginPage loginPage = new LoginPage();
-    RegisterPage registerPage = new RegisterPage();
+public class logoutSteps{
     String email = "kiyowo@gmail.com";
     String password ="Kiyowo1511";
+    HomePage homePage;
+    LoginPage loginPage;
+
+    RegisterPage registerPage;
     @Given("i am on homepage")
     public void iAmOnHomepage() throws InterruptedException {
         registerPage.openUrl();

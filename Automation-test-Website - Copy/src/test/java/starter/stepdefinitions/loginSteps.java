@@ -4,13 +4,15 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import starter.pages.HomePage;
+
 import starter.pages.LoginPage;
 import starter.pages.RegisterPage;
 
-public class loginSteps {
-    RegisterPage registerPage = new RegisterPage();
-    LoginPage loginPage = new LoginPage();
-    HomePage homePage = new HomePage();
+
+public class loginSteps{
+    RegisterPage registerPage;
+    LoginPage loginPage;
+    HomePage homePage;
 
     @Given("i have registered")
     public void iHaveRegistered() {

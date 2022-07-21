@@ -5,7 +5,6 @@ import net.thucydides.core.annotations.Step;
 import org.openqa.selenium.By;
 
 public class HomePage extends PageObject {
-
     String dashboardText = "Admin Page, Welcome  ";
 
     private By loginSuccesfullAlert(){

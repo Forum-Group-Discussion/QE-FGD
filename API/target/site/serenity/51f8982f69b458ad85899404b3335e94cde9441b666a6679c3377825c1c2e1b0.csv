@@ -1,3 +1,0 @@
-"Story","Title","Result","Date","Stability","Duration (s)"
-"Like Thread","GET - As a user i want to see Like on a thread","FAILURE","2022-07-21T16:02:19.0844876+07:00[Asia/Jakarta]","0.0","1.47"
-"Like Thread","GET - As a user i want to get dislike of thread","FAILURE","2022-07-21T16:02:20.5730799+07:00[Asia/Jakarta]","0.0","1.41"

@@ -34,7 +34,7 @@ public class PostReportThread {
 
     public void validateDataDetailAfterReport(String report_type, int id_thread,int user_id){
         SerenityRest.then().body("message",equalTo("SUCCESS"));
-        SerenityRest.then().body("data.thread.id",equalTo(id_thread));
+        SerenityRest.then().body("data.user.id",equalTo(id_thread));
         SerenityRest.then().body("data.thread.users.id",equalTo(user_id));
         SerenityRest.then().body("data.report_type",equalTo(report_type));
     }

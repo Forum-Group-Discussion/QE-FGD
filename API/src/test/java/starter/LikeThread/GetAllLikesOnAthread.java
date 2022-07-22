@@ -30,7 +30,7 @@ public class GetAllLikesOnAthread {
 
     public void validateDataDetailCountOnThread(){
         SerenityRest.then().body("message",equalTo("SUCCESS"));
-        SerenityRest.then().body("data",equalTo(0));
+        SerenityRest.then().body("data",equalTo(1));
     }
 
     public void errorMessage(){

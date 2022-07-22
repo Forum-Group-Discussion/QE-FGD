@@ -148,7 +148,7 @@
             $("#requirements-tabs").tabs();
             $("#test-tabs").tabs();
 
-            var requirementsTree = [{"text":"Like Thread","type":"feature","href":"0cce21019d65a6105d12677e65a0e8b5fb46e6d2b9b3568856a89daa929adced.html","nodes":[],"selectable":false,"tags":["\u003ca href\u003d\u0027##beforetable\u0027\u003e\u003ci class\u003d\u0027fa fa-times-circle failure-icon \u0027 title\u003d\u0027FAILURE\u0027\u003e\u003c/i\u003e\u003c/a\u003e","\u003cspan class\u003d\u0027feature-count\u0027\u003e3 scenarios\u003c/span\u003e"]}];
+            var requirementsTree = [];
 
             $('#tree').treeview({
                 data: requirementsTree,
@@ -218,7 +218,7 @@
             <a href="#"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 21-07-2022 16:02</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated </span>
     <br style="clear:left"/>
 </div>
 
@@ -232,23 +232,11 @@
                     <div>
                         <div clas="table">
                             <div class="row">
-                                <div class="col-sm-8">
+                                    <div class="col-sm-12">
                                         <span>
                                             <h2><i class="fa fa-book"></i> Feature:  Like Thread</h2>
                                         </span>
                                     </div>
-                                        <div class="col-sm-4">
-                                        <span class="feature-tags">
-                                                <p class="tag">
-                                                    <span class="badge tag-badge" style="background:default;">
-                                                        <i class="fa fa-tag"></i>&nbsp;<a class="tagLink"
-                                                                                          style="background:default;"
-                                                                                          href="e8b215eb32f7378e6ef68d3d8e70020b703d2e32a487c2e23de116a3029029e7.html">Getdislikethread
-                                                        (tag)</a>
-                                                    </span>
-                                                </p>
-                                        </span>
-                                        </div>
                                 </div>
                             </div>
                         </div>
@@ -283,229 +271,10 @@ so that the thread can get likes from all users
                                         <div class="row">
                                             <div class="col-sm-12">
 
-                                                    <!--- TOC --->
-                                                    <div id="toc">
-                                                        <h3>Overview</h3>
-                                                        <table class="table" id="toc-table">
-                                                                        <tr>
-                                                                            <td style="width:95%;" class="toc-title">
-                                                                                <span class="orphan-scenario-toc-entry">
-                                                                                    <a href="#7e9a2484b7c5bb09c53cc50c060c1d6c54ae2c46d775409652c0682413c5e42f" title="View scenario details">
-                                                                                        <i class="far fa-comment-dots"></i> Scenario Outline: POST - As a user i want to give like on a thread
-                                                                                    </a>
-                                                                                        (3 examples)
-                                                                                </span>
-                                                                            </td>
-                                                                            <td style="width:5%;">
-                                                                                <table>
-                                                                                    <tr>
-                                                                                        <td>
-                                                                                            <a style="margin-left:0.5em;padding-right: 1.5em;"
-                                                                                               href="b6fa945b9b8b52348777b5940e75a7dfcef3660f4bbd32bd6f6dd4d56b9fb53a.html"
-                                                                                               title="View test results">
-                                                                                                <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
-                                                                                                </a>
+                                                    <h3>Requirements Overview</h3>
 
+                                                    <div id="tree"></div>
 
-                                                                                        </td>
-                                                                                            <td>
-                                                                                                <a style="margin-left:0.5em;padding-right: 1.5em;"
-                                                                                                   href="b6fa945b9b8b52348777b5940e75a7dfcef3660f4bbd32bd6f6dd4d56b9fb53a.html"
-                                                                                                   title="View test results">
-                                                                                                    <i class="fas fa-search-plus"></i>
-                                                                                                </a>
-                                                                                            </td>
-                                                                                    </tr>
-                                                                                </table>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td style="width:95%;" class="toc-title">
-                                                                                <span class="orphan-scenario-toc-entry">
-                                                                                    <a href="#ec797d7f9e3c0087b063c0025ccd564cd4eab822be73449e902a547bd41cee10" title="View scenario details">
-                                                                                        <i class="far fa-comment-dots"></i> Scenario Outline: GET - As a user i want to see Like on a thread
-                                                                                    </a>
-                                                                                        (2 examples)
-                                                                                </span>
-                                                                            </td>
-                                                                            <td style="width:5%;">
-                                                                                <table>
-                                                                                    <tr>
-                                                                                        <td>
-                                                                                            <a style="margin-left:0.5em;padding-right: 1.5em;"
-                                                                                               href="44a7f719a7ba5710621aa947dfae18d1921a4edf16044477f0957a2e68ead2af.html"
-                                                                                               title="View test results">
-                                                                                                <a href='##beforetable'><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i></a>
-                                                                                                </a>
-
-
-                                                                                        </td>
-                                                                                            <td>
-                                                                                                <a style="margin-left:0.5em;padding-right: 1.5em;"
-                                                                                                   href="44a7f719a7ba5710621aa947dfae18d1921a4edf16044477f0957a2e68ead2af.html"
-                                                                                                   title="View test results">
-                                                                                                    <i class="fas fa-search-plus"></i>
-                                                                                                </a>
-                                                                                            </td>
-                                                                                    </tr>
-                                                                                </table>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td style="width:95%;" class="toc-title">
-                                                                                <span class="orphan-scenario-toc-entry">
-                                                                                    <a href="#dc1657b0eec86d59a10a670c7dde4f5de6c46e7fb97bab7e35c2fa6aa391eeca" title="View scenario details">
-                                                                                        <i class="far fa-comment-dots"></i> Scenario Outline: GET - As a user i want to get dislike of thread
-                                                                                    </a>
-                                                                                        (2 examples)
-                                                                                </span>
-                                                                            </td>
-                                                                            <td style="width:5%;">
-                                                                                <table>
-                                                                                    <tr>
-                                                                                        <td>
-                                                                                            <a style="margin-left:0.5em;padding-right: 1.5em;"
-                                                                                               href="2808d65c9b15cb0ddfc9b7b4fae9a384d064aa95c269abc7f7ee03ce2904f659.html"
-                                                                                               title="View test results">
-                                                                                                <a href='##beforetable'><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i></a>
-                                                                                                </a>
-
-
-                                                                                        </td>
-                                                                                            <td>
-                                                                                                <a style="margin-left:0.5em;padding-right: 1.5em;"
-                                                                                                   href="2808d65c9b15cb0ddfc9b7b4fae9a384d064aa95c269abc7f7ee03ce2904f659.html"
-                                                                                                   title="View test results">
-                                                                                                    <i class="fas fa-search-plus"></i>
-                                                                                                </a>
-                                                                                            </td>
-                                                                                    </tr>
-                                                                                </table>
-                                                                            </td>
-                                                                        </tr>
-                                                        </table>
-                                                    </div>
-                                                    <!--- END OF TOC --->
-
-                                                    <h3>Scenarios</h3>
-
-                                                        <a name="c9c83d76-8884-488a-8f3d-975dbaacf376" ></a>
-
-
-                                                            <div class="scenario-docs card" id="7e9a2484b7c5bb09c53cc50c060c1d6c54ae2c46d775409652c0682413c5e42f">
-                                                                <div class="scenario-docs card-header success"
-                                                                     style="min-height:1.5em;">
-                                                                    <div>
-                                                            <span class="scenario-heading">
-                                                                <a href="b6fa945b9b8b52348777b5940e75a7dfcef3660f4bbd32bd6f6dd4d56b9fb53a.html"
-                                                                   title="View test results">Scenario Outline: POST - As a user i want to give like on a thread</a>
-                                                            </span>
-                                                                        <span class="scenario-result-icon">
-                                                                
-
-                                                                                <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
-                                                            </span>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="scenario-docs card-body">
-                                                                        <p>Given I set an endpoint for liking on a thread</p>
-                                                                        <p>When I request like on a thread by ID thread {id_thread}</p>
-                                                                        <p>Then I validate the status code {status_code}</p>
-                                                                        <p>And I get the &quot;{result}&quot; result that i like the thread {id_thread}</p>
-                                                                    <div class="examples">
-                                                                            <p><p>Examples:</p>
-<blockquote>
-</blockquote>
-<div class='example-table-in-scenario'><table>
-<thead>
-<tr><th>id_thread</th><th>status_code</th><th>result</th><th></th></tr>
-</thead>
-<tbody>
-<tr><td>22</td><td>200</td><td>success</td><td><a href='b6fa945b9b8b52348777b5940e75a7dfcef3660f4bbd32bd6f6dd4d56b9fb53a.html#beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></td></tr>
-<tr><td>22</td><td>200</td><td>duplicate</td><td><a href='b6fa945b9b8b52348777b5940e75a7dfcef3660f4bbd32bd6f6dd4d56b9fb53a.html#beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></td></tr>
-<tr><td>100</td><td>400</td><td>data not found</td><td><a href='b6fa945b9b8b52348777b5940e75a7dfcef3660f4bbd32bd6f6dd4d56b9fb53a.html#beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></td></tr>
-</tbody>
-</table></div>
-</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="scenario-docs card" id="ec797d7f9e3c0087b063c0025ccd564cd4eab822be73449e902a547bd41cee10">
-                                                                <div class="scenario-docs card-header failure"
-                                                                     style="min-height:1.5em;">
-                                                                    <div>
-                                                            <span class="scenario-heading">
-                                                                <a href="44a7f719a7ba5710621aa947dfae18d1921a4edf16044477f0957a2e68ead2af.html"
-                                                                   title="View test results">Scenario Outline: GET - As a user i want to see Like on a thread</a>
-                                                            </span>
-                                                                        <span class="scenario-result-icon">
-                                                                
-
-                                                                                <a href='##beforetable'><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i></a>
-                                                            </span>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="scenario-docs card-body">
-                                                                        <p>Given I set an endpoint count like on a thread</p>
-                                                                        <p>When I request count like on a thread by ID thread {id_thread}</p>
-                                                                        <p>Then I validate the status code {status_code}</p>
-                                                                        <p>And I get the &quot;{result}&quot; result that i get number of like on the thread</p>
-                                                                    <div class="examples">
-                                                                            <p><p>Examples:</p>
-<blockquote>
-</blockquote>
-<div class='example-table-in-scenario'><table>
-<thead>
-<tr><th>id_thread</th><th>status_code</th><th>result</th><th></th></tr>
-</thead>
-<tbody>
-<tr><td>36</td><td>200</td><td>success</td><td><a href='44a7f719a7ba5710621aa947dfae18d1921a4edf16044477f0957a2e68ead2af.html#beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></td></tr>
-<tr><td>100</td><td>400</td><td>data not found</td><td><a href='44a7f719a7ba5710621aa947dfae18d1921a4edf16044477f0957a2e68ead2af.html#beforetable'><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i></a></td></tr>
-</tbody>
-</table></div>
-</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="scenario-docs card" id="dc1657b0eec86d59a10a670c7dde4f5de6c46e7fb97bab7e35c2fa6aa391eeca">
-                                                                <div class="scenario-docs card-header failure"
-                                                                     style="min-height:1.5em;">
-                                                                    <div>
-                                                            <span class="scenario-heading">
-                                                                <a href="2808d65c9b15cb0ddfc9b7b4fae9a384d064aa95c269abc7f7ee03ce2904f659.html"
-                                                                   title="View test results">Scenario Outline: GET - As a user i want to get dislike of thread</a>
-                                                            </span>
-                                                                        <span class="scenario-result-icon">
-                                                                
-
-                                                                                <a href='##beforetable'><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i></a>
-                                                            </span>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="scenario-docs card-body">
-                                                                        <p>Given I set an endpoint for dislike thread</p>
-                                                                        <p>When I set an endpoint for dislike thread with ID Thread {id_thread}</p>
-                                                                        <p>Then I validate the status code {status_code}</p>
-                                                                        <p>And I get the &quot;{result}&quot; result that i get number of dislike on the thread</p>
-                                                                    <div class="examples">
-                                                                            <p><p>Examples:</p>
-<blockquote>
-</blockquote>
-<div class='example-table-in-scenario'><table>
-<thead>
-<tr><th>id_thread</th><th>status_code</th><th>result</th><th></th></tr>
-</thead>
-<tbody>
-<tr><td>24</td><td>200</td><td>success</td><td><a href='2808d65c9b15cb0ddfc9b7b4fae9a384d064aa95c269abc7f7ee03ce2904f659.html#beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></td></tr>
-<tr><td>100</td><td>400</td><td>data not found</td><td><a href='2808d65c9b15cb0ddfc9b7b4fae9a384d064aa95c269abc7f7ee03ce2904f659.html#beforetable'><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i></a></td></tr>
-</tbody>
-</table></div>
-</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
                                             </div>
                                         </div>
                                     </div>
@@ -514,41 +283,7 @@ so that the thread can get likes from all users
                                 <div id="results" class="tab-pane fade">
                                     <div class="container-fluid">
                                         <div class="row">
-                                            <div class="col-sm-4">
-
-                                                <div style="width:300px;" class="chart-container automated-and-manual-results">
-                                                    <div class="ct-chart ct-square"></div>
-                                                </div>
-                                                <script>
-
-                                                    var labels = ['71%', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '29%', ' ', ' ', ' ', ' ', ' '];
-                                                    // Our series array that contains series objects or in this case series data arrays
-
-                                                    var series = [{meta: 'Passing tests (automated)', value: 5}, {meta: 'Passing tests (manual)', value: 0}, {meta: 'Pending tests (automated)', value: 0}, {meta: 'Pending tests (manual)', value: 0}, {meta: 'Ignored tests (automated)', value: 0}, {meta: 'Ignored tests (manual)', value: 0}, {meta: 'Skipped tests (automated)', value: 0}, {meta: 'Skipped tests (manual)', value: 0}, {meta: 'Failing tests (automated)', value: 2}, {meta: 'Failing tests (manual)', value: 0}, {meta: 'Broken tests (automated)', value: 0}, {meta: 'Broken tests (manual)', value: 0}, {meta: 'Compromised tests (automated)', value: 0}, {meta: 'Compromised tests (manual)', value: 0}];
-
-                                                    // As options we currently only set a static size of 300x200 px. We can also omit this and use aspect ratio containers
-                                                    // as you saw in the previous example
-                                                    var options = {
-                                                        width: 350,
-                                                        height: 300
-                                                    };
-
-                                                    $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
-                                                        new Chartist.Pie('.ct-chart', {
-                                                            series: series,
-                                                            labels: labels,
-                                                        }, {
-                                                            donut: true,
-                                                            donutWidth: 60,
-                                                            donutSolid: true,
-                                                            startAngle: 270,
-                                                            showLabel: true
-                                                        }, options);
-                                                    });
-
-                                                </script>
-                                            </div>
-                                            <div class="col-sm-8">
+                                                <div class="col-sm-12">
 
                                                     <table class="table">
                                                         <thead>
@@ -563,12 +298,11 @@ so that the thread can get likes from all users
                                                         </thead>
                                                         <tbody>
                                                         <tr>
-                                                                <td class="aggregate-result-count">
-                                                                    <a href="43eb423fbc437b1f58d1c8b9c95ed3ff553af1552014130b674a8fe49b0679ca.html"><i
-                                                                                class='fa fa-check-circle-o success-icon'></i>&nbsp;Passing</a>
+                                                                <td class="aggregate-result-count"><i
+                                                                            class='fa fa-check-circle-o success-icon'></i>&nbsp;Passing
                                                                 </td>
-                                                            <td class="automated-stats">5</td>
-                                                            <td class="automated-stats">71%</td>
+                                                            <td class="automated-stats">0</td>
+                                                            <td class="automated-stats"> </td>
                                                         </tr>
                                                         <tr>
                                                                 <td class="aggregate-result-count"><i
@@ -592,19 +326,19 @@ so that the thread can get likes from all users
                                                             <td class="automated-stats"> </td>
                                                         </tr>
                                                         <tr>
-                                                                    <td colspan="3"><a href="868eeee901a7c5881648bd356eb0eb6e1c1bc5c773da90946b2369efd0694596.html"><i
-                                                                                    class='fa fa-times failure-icon'></i>&nbsp;<em>Unsuccessful</em></a>
+                                                                    <td colspan="3"><i
+                                                                                class='fa fa-times failure-icon'></i>&nbsp;<em>Unsuccessful</em></a>
                                                                     </td>
 
                                                         </tr>
 
                                                         <tr>
                                                                 <td class="aggregate-result-count indented-error-category">
-                                                                    <a href="0ff35fb8d2c8281941b1dd7c2f15ea1db9a741584a8b96d58d3087e37d3a1a60.html"><i
-                                                                                class='fa fa-times-circle failure-icon'></i>&nbsp;Failed</a>
+                                                                    <i
+                                                                            class='fa fa-times-circle failure-icon'></i>&nbsp;Failed
                                                                 </td>
-                                                            <td class="automated-stats">2</td>
-                                                            <td class="automated-stats">29%</td>
+                                                            <td class="automated-stats">0</td>
+                                                            <td class="automated-stats"> </td>
                                                         <tr>
                                                                 <td class="aggregate-result-count indented-error-category">
                                                                     <i
@@ -622,7 +356,7 @@ so that the thread can get likes from all users
                                                         </tr>
                                                         <tr class="summary-stats">
                                                             <td class="aggregate-result-count">Total</td>
-                                                            <td class="automated-stats">7</td>
+                                                            <td class="automated-stats">0</td>
                                                             <td class="automated-stats"></td>
                                                         </tr>
                                                         </tbody>
@@ -644,11 +378,11 @@ so that the thread can get likes from all users
                                                         </thead>
                                                         <tbody>
                                                         <tr>
-                                                            <td>12s</td>
-                                                            <td>11s</td>
-                                                            <td>669ms</td>
-                                                            <td>7s</td>
-                                                            <td>4s</td>
+                                                            <td>0ms</td>
+                                                            <td>0ms</td>
+                                                            <td>0ms</td>
+                                                            <td>0ms</td>
+                                                            <td>0ms</td>
                                                         </tr>
                                                         </tbody>
                                                     </table>
@@ -660,59 +394,7 @@ so that the thread can get likes from all users
                                                 <div class="col-sm-12">
                                                     <h3><i class="fas fa-cogs"></i> Automated Tests</h3>
 
-                                                        <table class="scenario-result-table table"
-                                                               id="scenario-results">
-                                                            <thead>
-                                                            <tr>
-                                                                <th class="test-name-column">Scenario</th>
-                                                                <th>Steps</th>
-                                                                <th>Started</th>
-                                                                <th>Duration</th>
-                                                                <th>Result</th>
-                                                            </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <tr class="scenario-result SUCCESS">
-                                                                    <td>
-                                                                            <a href="b6fa945b9b8b52348777b5940e75a7dfcef3660f4bbd32bd6f6dd4d56b9fb53a.html">POST - As a user i want to give like on a thread</a>
-                                                                            (3 examples)
-                                                                    </td>
-                                                                    <td>4</td>
-                                                                    <td>16:02:09</td>
-                                                                    <td>9s 553ms</td>
-                                                                    <td>
-                                                                            <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a> <span
-                                                                                style="display:none">SUCCESS</span>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr class="scenario-result FAILURE">
-                                                                    <td>
-                                                                            <a href="44a7f719a7ba5710621aa947dfae18d1921a4edf16044477f0957a2e68ead2af.html">GET - As a user i want to see Like on a thread</a>
-                                                                            (2 examples)
-                                                                    </td>
-                                                                    <td>4</td>
-                                                                    <td>16:02:19</td>
-                                                                    <td>1s 470ms</td>
-                                                                    <td>
-                                                                            <a href='##beforetable'><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i></a> <span
-                                                                                style="display:none">FAILURE</span>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr class="scenario-result FAILURE">
-                                                                    <td>
-                                                                            <a href="2808d65c9b15cb0ddfc9b7b4fae9a384d064aa95c269abc7f7ee03ce2904f659.html">GET - As a user i want to get dislike of thread</a>
-                                                                            (2 examples)
-                                                                    </td>
-                                                                    <td>4</td>
-                                                                    <td>16:02:20</td>
-                                                                    <td>1s 414ms</td>
-                                                                    <td>
-                                                                            <a href='##beforetable'><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i></a> <span
-                                                                                style="display:none">FAILURE</span>
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
+                                                        No automated tests were executed
 
                                                 </div>
                                             </div>

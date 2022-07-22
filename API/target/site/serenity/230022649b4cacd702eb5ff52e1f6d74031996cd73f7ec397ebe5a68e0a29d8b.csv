@@ -1,4 +1,2 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"Following","POST - As a user i am able to follow another account","SUCCESS","2022-07-21T16:02:09.3485505+07:00[Asia/Jakarta]","0.0","10.94"
-"Following","GET - As a user i am able to get following by Id following","SUCCESS","2022-07-21T16:02:20.310889+07:00[Asia/Jakarta]","0.0","2.17"
-"Following","GET - As a user i am able to get followers of an account","SUCCESS","2022-07-21T16:02:22.490715+07:00[Asia/Jakarta]","0.0","1.71"
+"Following","POST - As a user i am able to follow another account","SUCCESS","2022-07-22T17:07:40.8727471+07:00[Asia/Jakarta]","0.0","7.69"

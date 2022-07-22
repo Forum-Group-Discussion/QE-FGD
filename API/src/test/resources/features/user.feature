@@ -26,7 +26,7 @@ Feature: user
 
       Examples:
         |id_endpoint|id_request|status_code|result|
-        |13|13|200        |authorized             |
+        |99|99|200        |authorized             |
         |100|100|400       |not authorized        |
         |user01|user01|400    |bad request     |
 
@@ -53,7 +53,7 @@ Feature: user
 
       Examples:
       |id_user|data|token|status_code|result|
-      |     13 |denaa pardosi|valid|200   |success|
+      |    105 |cahyo kumolo|valid|200   |success|
       |     2 |kombat    |invalid|400 |invalid token|
 
 

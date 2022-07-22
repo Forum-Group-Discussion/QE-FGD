@@ -12,8 +12,8 @@ Feature: Report Comment
 
     Examples:
       |id_comment|status_code|result|report_type|user_id|
-      |40       |200        |success|This_thread_contains_inappropriate_and_Fraud_elements|68|
-      |11       |400        |duplicate reporting|This_thread_contains_inappropriate_and_Fraud_elements|0|
-      |100      |400        |unavailable thread|This_thread_contains_inappropriate_and_Fraud_elements|0|
+      |47       |200        |success|This_thread_contains_inappropriate_and_Fraud_elements|107|
+      |47       |400        |duplicate reporting|This_thread_contains_inappropriate_and_Fraud_elements|0|
+      |1000      |400        |unavailable thread|This_thread_contains_inappropriate_and_Fraud_elements|0|
 
 

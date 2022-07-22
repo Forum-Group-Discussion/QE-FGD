@@ -12,10 +12,10 @@ Feature: Comment
 
     Examples:
    |id_thread|status_code|result|
-    |31        | 200       |success|
-    |100      | 400       |failed |
+    |61        | 200       |success|
+    |1000      | 400       |failed |
 
-    @GetCommentSByIdComment
+    @GetCommentSByIdthread
     Scenario Outline: Get Comments By id thread
       Given I set an endpoint for GET comment by ID thread <id_thread>
       When I request GET comment by ID thread <id_thread>
@@ -24,7 +24,7 @@ Feature: Comment
 
       Examples:
       |id_thread|status_code|result|
-      |27|200|success|
+      |63|200|success|
       |2|400|data not found|
 
 
@@ -37,6 +37,6 @@ Feature: Comment
 
         Examples:
           |id_comment|status_code|result|
-          |41|200|success              |
+          |46|200|success              |
           |2|400|data not found        |
 

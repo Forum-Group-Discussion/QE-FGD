@@ -1,5 +1,0 @@
-"Story","Title","Result","Date","Stability","Duration (s)"
-"Topic","GET - As a user i have to be able to get all topic","SUCCESS","2022-07-21T16:02:19.7395182+07:00[Asia/Jakarta]","0.0","0.67"
-"Topic","GET - As a user i cannot get list topic with invalid token","SUCCESS","2022-07-21T16:02:20.421007+07:00[Asia/Jakarta]","0.0","0.68"
-"Topic","GET - As a user i have to be able to get topic by id","SUCCESS","2022-07-21T16:02:21.1093292+07:00[Asia/Jakarta]","0.0","2.91"
-"Topic","PUT - As a user i want to update topic name for thread","SUCCESS","2022-07-21T16:02:24.1374127+07:00[Asia/Jakarta]","0.0","1.61"

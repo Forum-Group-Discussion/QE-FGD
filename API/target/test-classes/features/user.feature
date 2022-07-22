@@ -53,7 +53,7 @@ Feature: user
 
       Examples:
       |id_user|data|token|status_code|result|
-      |     13 |denaa pardosi|valid|200   |success|
+      |    105 |cahyo kumolo|valid|200   |success|
       |     2 |kombat    |invalid|400 |invalid token|
 
 

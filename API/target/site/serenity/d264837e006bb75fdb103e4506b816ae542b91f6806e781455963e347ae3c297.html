@@ -148,7 +148,7 @@
             $("#requirements-tabs").tabs();
             $("#test-tabs").tabs();
 
-            var requirementsTree = [{"text":"Topic","type":"feature","href":"d264837e006bb75fdb103e4506b816ae542b91f6806e781455963e347ae3c297.html","nodes":[],"selectable":false,"tags":["\u003ca href\u003d\u0027##beforetable\u0027\u003e\u003ci class\u003d\u0027fa fa-times-circle failure-icon \u0027 title\u003d\u0027FAILURE\u0027\u003e\u003c/i\u003e\u003c/a\u003e","\u003cspan class\u003d\u0027feature-count\u0027\u003e5 scenarios\u003c/span\u003e"]}];
+            var requirementsTree = [];
 
             $('#tree').treeview({
                 data: requirementsTree,
@@ -218,7 +218,7 @@
             <a href="#"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 21-07-2022 16:02</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated </span>
     <br style="clear:left"/>
 </div>
 
@@ -232,23 +232,11 @@
                     <div>
                         <div clas="table">
                             <div class="row">
-                                <div class="col-sm-8">
+                                    <div class="col-sm-12">
                                         <span>
                                             <h2><i class="fa fa-book"></i> Feature:  Topic</h2>
                                         </span>
                                     </div>
-                                        <div class="col-sm-4">
-                                        <span class="feature-tags">
-                                                <p class="tag">
-                                                    <span class="badge tag-badge" style="background:default;">
-                                                        <i class="fa fa-tag"></i>&nbsp;<a class="tagLink"
-                                                                                          style="background:default;"
-                                                                                          href="8ed09d252b3ef24ad364fa5deb0fc47e53529ea0deb2958810cefc271ae606ec.html">Put Topic
-                                                        (tag)</a>
-                                                    </span>
-                                                </p>
-                                        </span>
-                                        </div>
                                 </div>
                             </div>
                         </div>
@@ -283,344 +271,10 @@ so that i can categorize the thread
                                         <div class="row">
                                             <div class="col-sm-12">
 
-                                                    <!--- TOC --->
-                                                    <div id="toc">
-                                                        <h3>Overview</h3>
-                                                        <table class="table" id="toc-table">
-                                                                        <tr>
-                                                                            <td style="width:95%;" class="toc-title">
-                                                                                <span class="orphan-scenario-toc-entry">
-                                                                                    <a href="#acd543ddd49fafc39ca14f797dbc89ad80cd4fe7fb33fef5e6e8f522eb6d57b2" title="View scenario details">
-                                                                                        <i class="far fa-comment-dots"></i> Scenario Outline: POST - As a user i am able to make a topic of thread
-                                                                                    </a>
-                                                                                        (4 examples)
-                                                                                </span>
-                                                                            </td>
-                                                                            <td style="width:5%;">
-                                                                                <table>
-                                                                                    <tr>
-                                                                                        <td>
-                                                                                            <a style="margin-left:0.5em;padding-right: 1.5em;"
-                                                                                               href="1a559ed97bd20d5cf5f42640d162d415f250638722508a0dcdc7711e293b9f51.html"
-                                                                                               title="View test results">
-                                                                                                <a href='##beforetable'><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i></a>
-                                                                                                </a>
+                                                    <h3>Requirements Overview</h3>
 
+                                                    <div id="tree"></div>
 
-                                                                                        </td>
-                                                                                            <td>
-                                                                                                <a style="margin-left:0.5em;padding-right: 1.5em;"
-                                                                                                   href="1a559ed97bd20d5cf5f42640d162d415f250638722508a0dcdc7711e293b9f51.html"
-                                                                                                   title="View test results">
-                                                                                                    <i class="fas fa-search-plus"></i>
-                                                                                                </a>
-                                                                                            </td>
-                                                                                    </tr>
-                                                                                </table>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td style="width:95%;" class="toc-title">
-                                                                                <span class="orphan-scenario-toc-entry">
-                                                                                    <a href="#74408b0e0e08fd26eff6cfb8f8a7c8d076eb9f7d1fa7a8b9eeff014cc21f267c" title="View scenario details">
-                                                                                        <i class="far fa-comment-dots"></i> Scenario: GET - As a user i have to be able to get all topic
-                                                                                    </a>
-                                                                                </span>
-                                                                            </td>
-                                                                            <td style="width:5%;">
-                                                                                <table>
-                                                                                    <tr>
-                                                                                        <td>
-                                                                                            <a style="margin-left:0.5em;padding-right: 1.5em;"
-                                                                                               href="d086c70405492e849d9d87f68085c70ead9accc75921a242c6ac47f7c9f542fb.html"
-                                                                                               title="View test results">
-                                                                                                <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
-                                                                                                </a>
-
-
-                                                                                        </td>
-                                                                                            <td>
-                                                                                                <a style="margin-left:0.5em;padding-right: 1.5em;"
-                                                                                                   href="d086c70405492e849d9d87f68085c70ead9accc75921a242c6ac47f7c9f542fb.html"
-                                                                                                   title="View test results">
-                                                                                                    <i class="fas fa-search-plus"></i>
-                                                                                                </a>
-                                                                                            </td>
-                                                                                    </tr>
-                                                                                </table>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td style="width:95%;" class="toc-title">
-                                                                                <span class="orphan-scenario-toc-entry">
-                                                                                    <a href="#37b8edb08d6b10210c1246c7ecb57d1d8efb9c98680e687f797af6965f892dcd" title="View scenario details">
-                                                                                        <i class="far fa-comment-dots"></i> Scenario: GET - As a user i cannot get list topic with invalid token
-                                                                                    </a>
-                                                                                </span>
-                                                                            </td>
-                                                                            <td style="width:5%;">
-                                                                                <table>
-                                                                                    <tr>
-                                                                                        <td>
-                                                                                            <a style="margin-left:0.5em;padding-right: 1.5em;"
-                                                                                               href="4e92542df49ef1db982bc10384a56b6ef71610d46301e1e43211ecc49dd62da4.html"
-                                                                                               title="View test results">
-                                                                                                <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
-                                                                                                </a>
-
-
-                                                                                        </td>
-                                                                                            <td>
-                                                                                                <a style="margin-left:0.5em;padding-right: 1.5em;"
-                                                                                                   href="4e92542df49ef1db982bc10384a56b6ef71610d46301e1e43211ecc49dd62da4.html"
-                                                                                                   title="View test results">
-                                                                                                    <i class="fas fa-search-plus"></i>
-                                                                                                </a>
-                                                                                            </td>
-                                                                                    </tr>
-                                                                                </table>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td style="width:95%;" class="toc-title">
-                                                                                <span class="orphan-scenario-toc-entry">
-                                                                                    <a href="#cc0123ec47f4883ecd560520cc7701a33d96ee00ed03340adf55eead17c2922a" title="View scenario details">
-                                                                                        <i class="far fa-comment-dots"></i> Scenario Outline: GET - As a user i have to be able to get topic by id
-                                                                                    </a>
-                                                                                        (4 examples)
-                                                                                </span>
-                                                                            </td>
-                                                                            <td style="width:5%;">
-                                                                                <table>
-                                                                                    <tr>
-                                                                                        <td>
-                                                                                            <a style="margin-left:0.5em;padding-right: 1.5em;"
-                                                                                               href="bdd5a558ca8a8a7dce3b22dc8f2c83e446e307b98a893e7901b9c4f4045c686b.html"
-                                                                                               title="View test results">
-                                                                                                <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
-                                                                                                </a>
-
-
-                                                                                        </td>
-                                                                                            <td>
-                                                                                                <a style="margin-left:0.5em;padding-right: 1.5em;"
-                                                                                                   href="bdd5a558ca8a8a7dce3b22dc8f2c83e446e307b98a893e7901b9c4f4045c686b.html"
-                                                                                                   title="View test results">
-                                                                                                    <i class="fas fa-search-plus"></i>
-                                                                                                </a>
-                                                                                            </td>
-                                                                                    </tr>
-                                                                                </table>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td style="width:95%;" class="toc-title">
-                                                                                <span class="orphan-scenario-toc-entry">
-                                                                                    <a href="#8cfda06880b2de214e6e758bbe557ca26e227fe5421f2cab1560c8b536527a60" title="View scenario details">
-                                                                                        <i class="far fa-comment-dots"></i> Scenario Outline: PUT - As a user i want to update topic name for thread
-                                                                                    </a>
-                                                                                        (2 examples)
-                                                                                </span>
-                                                                            </td>
-                                                                            <td style="width:5%;">
-                                                                                <table>
-                                                                                    <tr>
-                                                                                        <td>
-                                                                                            <a style="margin-left:0.5em;padding-right: 1.5em;"
-                                                                                               href="5b55c790d72729c95a760d12af902c637b06513f762a637cbb98a61b70346c66.html"
-                                                                                               title="View test results">
-                                                                                                <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
-                                                                                                </a>
-
-
-                                                                                        </td>
-                                                                                            <td>
-                                                                                                <a style="margin-left:0.5em;padding-right: 1.5em;"
-                                                                                                   href="5b55c790d72729c95a760d12af902c637b06513f762a637cbb98a61b70346c66.html"
-                                                                                                   title="View test results">
-                                                                                                    <i class="fas fa-search-plus"></i>
-                                                                                                </a>
-                                                                                            </td>
-                                                                                    </tr>
-                                                                                </table>
-                                                                            </td>
-                                                                        </tr>
-                                                        </table>
-                                                    </div>
-                                                    <!--- END OF TOC --->
-
-                                                    <h3>Scenarios</h3>
-
-                                                        <a name="8fc44b42-ca0f-4ab4-a434-fb73963f33dc" ></a>
-
-
-                                                            <div class="scenario-docs card" id="acd543ddd49fafc39ca14f797dbc89ad80cd4fe7fb33fef5e6e8f522eb6d57b2">
-                                                                <div class="scenario-docs card-header failure"
-                                                                     style="min-height:1.5em;">
-                                                                    <div>
-                                                            <span class="scenario-heading">
-                                                                <a href="1a559ed97bd20d5cf5f42640d162d415f250638722508a0dcdc7711e293b9f51.html"
-                                                                   title="View test results">Scenario Outline: POST - As a user i am able to make a topic of thread</a>
-                                                            </span>
-                                                                        <span class="scenario-result-icon">
-                                                                
-
-                                                                                <a href='##beforetable'><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i></a>
-                                                            </span>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="scenario-docs card-body">
-                                                                        <p>Given I set an endpoint for make a topic</p>
-                                                                        <p>When I request &quot;{data}&quot; for POST topic with &quot;{token}&quot;</p>
-                                                                        <p>Then I validate the status code {status_code}</p>
-                                                                        <p>And I validate the &quot;{topic_detail}&quot;</p>
-                                                                    <div class="examples">
-                                                                            <p><p>Examples:</p>
-<blockquote>
-</blockquote>
-<div class='example-table-in-scenario'><table>
-<thead>
-<tr><th>data</th><th>token</th><th>status_code</th><th>topic_detail</th><th></th></tr>
-</thead>
-<tbody>
-<tr><td>Manga</td><td>valid</td><td>200</td><td>success</td><td><a href='1a559ed97bd20d5cf5f42640d162d415f250638722508a0dcdc7711e293b9f51.html#beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></td></tr>
-<tr><td>Health</td><td>valid</td><td>500</td><td>duplicate</td><td><a href='1a559ed97bd20d5cf5f42640d162d415f250638722508a0dcdc7711e293b9f51.html#beforetable'><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i></a></td></tr>
-<tr><td></td><td>valid</td><td>500</td><td>data_not_found</td><td><a href='1a559ed97bd20d5cf5f42640d162d415f250638722508a0dcdc7711e293b9f51.html#beforetable'><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i></a></td></tr>
-<tr><td>Manga</td><td>invalid</td><td>400</td><td>invalid token</td><td><a href='1a559ed97bd20d5cf5f42640d162d415f250638722508a0dcdc7711e293b9f51.html#beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></td></tr>
-</tbody>
-</table></div>
-</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="scenario-docs card" id="74408b0e0e08fd26eff6cfb8f8a7c8d076eb9f7d1fa7a8b9eeff014cc21f267c">
-                                                                <div class="scenario-docs card-header success"
-                                                                     style="min-height:1.5em;">
-                                                                    <div>
-                                                            <span class="scenario-heading">
-                                                                <a href="d086c70405492e849d9d87f68085c70ead9accc75921a242c6ac47f7c9f542fb.html"
-                                                                   title="View test results">Scenario: GET - As a user i have to be able to get all topic</a>
-                                                            </span>
-                                                                        <span class="scenario-result-icon">
-                                                                
-
-                                                                                <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
-                                                            </span>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="scenario-docs card-body">
-                                                                        <p>Given I set an endpoint for get all topic</p>
-                                                                        <p>When I request GET all topic</p>
-                                                                        <p>Then I validate the status code 200</p>
-                                                                        <p>And I get a success message for get all user</p>
-                                                                    <div class="examples">
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="scenario-docs card" id="37b8edb08d6b10210c1246c7ecb57d1d8efb9c98680e687f797af6965f892dcd">
-                                                                <div class="scenario-docs card-header success"
-                                                                     style="min-height:1.5em;">
-                                                                    <div>
-                                                            <span class="scenario-heading">
-                                                                <a href="4e92542df49ef1db982bc10384a56b6ef71610d46301e1e43211ecc49dd62da4.html"
-                                                                   title="View test results">Scenario: GET - As a user i cannot get list topic with invalid token</a>
-                                                            </span>
-                                                                        <span class="scenario-result-icon">
-                                                                
-
-                                                                                <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
-                                                            </span>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="scenario-docs card-body">
-                                                                        <p>Given I set an endpoint for get all topic</p>
-                                                                        <p>When I request GET all topic with invalid token</p>
-                                                                        <p>Then I validate the status code 400</p>
-                                                                        <p>And I get a error message for get all user</p>
-                                                                    <div class="examples">
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="scenario-docs card" id="cc0123ec47f4883ecd560520cc7701a33d96ee00ed03340adf55eead17c2922a">
-                                                                <div class="scenario-docs card-header success"
-                                                                     style="min-height:1.5em;">
-                                                                    <div>
-                                                            <span class="scenario-heading">
-                                                                <a href="bdd5a558ca8a8a7dce3b22dc8f2c83e446e307b98a893e7901b9c4f4045c686b.html"
-                                                                   title="View test results">Scenario Outline: GET - As a user i have to be able to get topic by id</a>
-                                                            </span>
-                                                                        <span class="scenario-result-icon">
-                                                                
-
-                                                                                <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
-                                                            </span>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="scenario-docs card-body">
-                                                                        <p>Given I set an endpoint get topic by &quot;{id_topic}&quot;</p>
-                                                                        <p>When I request GET topic with &quot;{id_topic}&quot; and &quot;{token}&quot;</p>
-                                                                        <p>Then I validate the status code {status_code}</p>
-                                                                        <p>And I get the &quot;{result}&quot; for GET topic</p>
-                                                                    <div class="examples">
-                                                                            <p><p>Examples:</p>
-<blockquote>
-</blockquote>
-<div class='example-table-in-scenario'><table>
-<thead>
-<tr><th>id_topic</th><th>token</th><th>status_code</th><th>result</th><th></th></tr>
-</thead>
-<tbody>
-<tr><td>1</td><td>valid</td><td>200</td><td>success</td><td><a href='bdd5a558ca8a8a7dce3b22dc8f2c83e446e307b98a893e7901b9c4f4045c686b.html#beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></td></tr>
-<tr><td>100</td><td>valid</td><td>400</td><td>data_not_found</td><td><a href='bdd5a558ca8a8a7dce3b22dc8f2c83e446e307b98a893e7901b9c4f4045c686b.html#beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></td></tr>
-<tr><td>e-sport</td><td>valid</td><td>400</td><td>bad_request</td><td><a href='bdd5a558ca8a8a7dce3b22dc8f2c83e446e307b98a893e7901b9c4f4045c686b.html#beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></td></tr>
-<tr><td>1</td><td>invalid</td><td>400</td><td>invalid token</td><td><a href='bdd5a558ca8a8a7dce3b22dc8f2c83e446e307b98a893e7901b9c4f4045c686b.html#beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></td></tr>
-</tbody>
-</table></div>
-</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="scenario-docs card" id="8cfda06880b2de214e6e758bbe557ca26e227fe5421f2cab1560c8b536527a60">
-                                                                <div class="scenario-docs card-header success"
-                                                                     style="min-height:1.5em;">
-                                                                    <div>
-                                                            <span class="scenario-heading">
-                                                                <a href="5b55c790d72729c95a760d12af902c637b06513f762a637cbb98a61b70346c66.html"
-                                                                   title="View test results">Scenario Outline: PUT - As a user i want to update topic name for thread</a>
-                                                            </span>
-                                                                        <span class="scenario-result-icon">
-                                                                
-
-                                                                                <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
-                                                            </span>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="scenario-docs card-body">
-                                                                        <p>Given I set an endpoint for update topic with {id_topic}</p>
-                                                                        <p>When I request data &quot;{data}&quot; with PUT and {id_topic} for topic name</p>
-                                                                        <p>Then I validate the status code {status_code}</p>
-                                                                        <p>And I validate that the topic has been changed into &quot;{data}&quot; and validate the &quot;{response}&quot;</p>
-                                                                    <div class="examples">
-                                                                            <p><p>Examples:</p>
-<blockquote>
-</blockquote>
-<div class='example-table-in-scenario'><table>
-<thead>
-<tr><th>id_topic</th><th>data</th><th>status_code</th><th>response</th><th></th></tr>
-</thead>
-<tbody>
-<tr><td>1</td><td>Drama Korea</td><td>200</td><td>success</td><td><a href='5b55c790d72729c95a760d12af902c637b06513f762a637cbb98a61b70346c66.html#beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></td></tr>
-<tr><td>1000</td><td>Drama Turki</td><td>400</td><td>data not found</td><td><a href='5b55c790d72729c95a760d12af902c637b06513f762a637cbb98a61b70346c66.html#beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></td></tr>
-</tbody>
-</table></div>
-</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
                                             </div>
                                         </div>
                                     </div>
@@ -629,41 +283,7 @@ so that i can categorize the thread
                                 <div id="results" class="tab-pane fade">
                                     <div class="container-fluid">
                                         <div class="row">
-                                            <div class="col-sm-4">
-
-                                                <div style="width:300px;" class="chart-container automated-and-manual-results">
-                                                    <div class="ct-chart ct-square"></div>
-                                                </div>
-                                                <script>
-
-                                                    var labels = ['83%', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '17%', ' ', ' ', ' ', ' ', ' '];
-                                                    // Our series array that contains series objects or in this case series data arrays
-
-                                                    var series = [{meta: 'Passing tests (automated)', value: 10}, {meta: 'Passing tests (manual)', value: 0}, {meta: 'Pending tests (automated)', value: 0}, {meta: 'Pending tests (manual)', value: 0}, {meta: 'Ignored tests (automated)', value: 0}, {meta: 'Ignored tests (manual)', value: 0}, {meta: 'Skipped tests (automated)', value: 0}, {meta: 'Skipped tests (manual)', value: 0}, {meta: 'Failing tests (automated)', value: 2}, {meta: 'Failing tests (manual)', value: 0}, {meta: 'Broken tests (automated)', value: 0}, {meta: 'Broken tests (manual)', value: 0}, {meta: 'Compromised tests (automated)', value: 0}, {meta: 'Compromised tests (manual)', value: 0}];
-
-                                                    // As options we currently only set a static size of 300x200 px. We can also omit this and use aspect ratio containers
-                                                    // as you saw in the previous example
-                                                    var options = {
-                                                        width: 350,
-                                                        height: 300
-                                                    };
-
-                                                    $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
-                                                        new Chartist.Pie('.ct-chart', {
-                                                            series: series,
-                                                            labels: labels,
-                                                        }, {
-                                                            donut: true,
-                                                            donutWidth: 60,
-                                                            donutSolid: true,
-                                                            startAngle: 270,
-                                                            showLabel: true
-                                                        }, options);
-                                                    });
-
-                                                </script>
-                                            </div>
-                                            <div class="col-sm-8">
+                                                <div class="col-sm-12">
 
                                                     <table class="table">
                                                         <thead>
@@ -678,12 +298,11 @@ so that i can categorize the thread
                                                         </thead>
                                                         <tbody>
                                                         <tr>
-                                                                <td class="aggregate-result-count">
-                                                                    <a href="d346eaa24d2a15d9041e769faec9cf3ecb30980ce5d34a0d9ac55e7ce94b0f3b.html"><i
-                                                                                class='fa fa-check-circle-o success-icon'></i>&nbsp;Passing</a>
+                                                                <td class="aggregate-result-count"><i
+                                                                            class='fa fa-check-circle-o success-icon'></i>&nbsp;Passing
                                                                 </td>
-                                                            <td class="automated-stats">10</td>
-                                                            <td class="automated-stats">83%</td>
+                                                            <td class="automated-stats">0</td>
+                                                            <td class="automated-stats"> </td>
                                                         </tr>
                                                         <tr>
                                                                 <td class="aggregate-result-count"><i
@@ -707,19 +326,19 @@ so that i can categorize the thread
                                                             <td class="automated-stats"> </td>
                                                         </tr>
                                                         <tr>
-                                                                    <td colspan="3"><a href="efff27eaae5bfa4cee42f04b330459fb070279a51b3f0d80d39d8013b49b2709.html"><i
-                                                                                    class='fa fa-times failure-icon'></i>&nbsp;<em>Unsuccessful</em></a>
+                                                                    <td colspan="3"><i
+                                                                                class='fa fa-times failure-icon'></i>&nbsp;<em>Unsuccessful</em></a>
                                                                     </td>
 
                                                         </tr>
 
                                                         <tr>
                                                                 <td class="aggregate-result-count indented-error-category">
-                                                                    <a href="9aeb627d2c1eabd99e518910e0019fd75610c202845faf0def72a2f01979f6d9.html"><i
-                                                                                class='fa fa-times-circle failure-icon'></i>&nbsp;Failed</a>
+                                                                    <i
+                                                                            class='fa fa-times-circle failure-icon'></i>&nbsp;Failed
                                                                 </td>
-                                                            <td class="automated-stats">2</td>
-                                                            <td class="automated-stats">17%</td>
+                                                            <td class="automated-stats">0</td>
+                                                            <td class="automated-stats"> </td>
                                                         <tr>
                                                                 <td class="aggregate-result-count indented-error-category">
                                                                     <i
@@ -737,7 +356,7 @@ so that i can categorize the thread
                                                         </tr>
                                                         <tr class="summary-stats">
                                                             <td class="aggregate-result-count">Total</td>
-                                                            <td class="automated-stats">12</td>
+                                                            <td class="automated-stats">0</td>
                                                             <td class="automated-stats"></td>
                                                         </tr>
                                                         </tbody>
@@ -759,11 +378,11 @@ so that i can categorize the thread
                                                         </thead>
                                                         <tbody>
                                                         <tr>
-                                                            <td>15s</td>
-                                                            <td>14s</td>
-                                                            <td>603ms</td>
-                                                            <td>7s</td>
-                                                            <td>3s</td>
+                                                            <td>0ms</td>
+                                                            <td>0ms</td>
+                                                            <td>0ms</td>
+                                                            <td>0ms</td>
+                                                            <td>0ms</td>
                                                         </tr>
                                                         </tbody>
                                                     </table>
@@ -775,83 +394,7 @@ so that i can categorize the thread
                                                 <div class="col-sm-12">
                                                     <h3><i class="fas fa-cogs"></i> Automated Tests</h3>
 
-                                                        <table class="scenario-result-table table"
-                                                               id="scenario-results">
-                                                            <thead>
-                                                            <tr>
-                                                                <th class="test-name-column">Scenario</th>
-                                                                <th>Steps</th>
-                                                                <th>Started</th>
-                                                                <th>Duration</th>
-                                                                <th>Result</th>
-                                                            </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <tr class="scenario-result FAILURE">
-                                                                    <td>
-                                                                            <a href="1a559ed97bd20d5cf5f42640d162d415f250638722508a0dcdc7711e293b9f51.html">POST - As a user i am able to make a topic of thread</a>
-                                                                            (4 examples)
-                                                                    </td>
-                                                                    <td>4</td>
-                                                                    <td>16:02:09</td>
-                                                                    <td>10s 099ms</td>
-                                                                    <td>
-                                                                            <a href='##beforetable'><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i></a> <span
-                                                                                style="display:none">FAILURE</span>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr class="scenario-result SUCCESS">
-                                                                    <td>
-                                                                            <a href="d086c70405492e849d9d87f68085c70ead9accc75921a242c6ac47f7c9f542fb.html">GET - As a user i have to be able to get all topic</a>
-                                                                    </td>
-                                                                    <td>4</td>
-                                                                    <td>16:02:19</td>
-                                                                    <td>670ms</td>
-                                                                    <td>
-                                                                            <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a> <span
-                                                                                style="display:none">SUCCESS</span>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr class="scenario-result SUCCESS">
-                                                                    <td>
-                                                                            <a href="4e92542df49ef1db982bc10384a56b6ef71610d46301e1e43211ecc49dd62da4.html">GET - As a user i cannot get list topic with invalid token</a>
-                                                                    </td>
-                                                                    <td>4</td>
-                                                                    <td>16:02:20</td>
-                                                                    <td>678ms</td>
-                                                                    <td>
-                                                                            <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a> <span
-                                                                                style="display:none">SUCCESS</span>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr class="scenario-result SUCCESS">
-                                                                    <td>
-                                                                            <a href="bdd5a558ca8a8a7dce3b22dc8f2c83e446e307b98a893e7901b9c4f4045c686b.html">GET - As a user i have to be able to get topic by id</a>
-                                                                            (4 examples)
-                                                                    </td>
-                                                                    <td>4</td>
-                                                                    <td>16:02:21</td>
-                                                                    <td>2s 910ms</td>
-                                                                    <td>
-                                                                            <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a> <span
-                                                                                style="display:none">SUCCESS</span>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr class="scenario-result SUCCESS">
-                                                                    <td>
-                                                                            <a href="5b55c790d72729c95a760d12af902c637b06513f762a637cbb98a61b70346c66.html">PUT - As a user i want to update topic name for thread</a>
-                                                                            (2 examples)
-                                                                    </td>
-                                                                    <td>4</td>
-                                                                    <td>16:02:24</td>
-                                                                    <td>1s 610ms</td>
-                                                                    <td>
-                                                                            <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a> <span
-                                                                                style="display:none">SUCCESS</span>
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
+                                                        No automated tests were executed
 
                                                 </div>
                                             </div>

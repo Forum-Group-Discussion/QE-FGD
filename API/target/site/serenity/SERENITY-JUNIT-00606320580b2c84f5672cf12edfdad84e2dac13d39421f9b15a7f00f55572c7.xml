@@ -1,1 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Comment" skipped="0" tests="6" time="12.07" timestamp="2022-07-21 04:02:09"><testcase name="POST - As a user i want to give a comments on a thread"/><testcase name="Get Comments By id thread"/><testcase name="Delete comments By Id comments"/></testsuite>

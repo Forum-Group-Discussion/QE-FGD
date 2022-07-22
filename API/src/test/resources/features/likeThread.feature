@@ -12,9 +12,9 @@ Feature: Like Thread
 
     Examples:
     |id_thread|status_code|result|
-    |22        |200        |success|
-    |22        |200        |duplicate|
-    |100      |400        |data not found|
+    |65        |200        |success|
+    |65        |200        |duplicate|
+    |1000      |400        |data not found|
 
     @GETLikeThread
     Scenario Outline: GET - As a user i want to see Like on a thread
@@ -25,7 +25,7 @@ Feature: Like Thread
 
       Examples:
         |id_thread|status_code|result|
-        |36        |200        |success|
+        |65        |200        |success|
         |100      |400        |data not found|
 
 
@@ -38,8 +38,8 @@ Feature: Like Thread
 
         Examples:
           |id_thread|status_code|result|
-          |24       |200        |success|
-          |100      |400        |data not found|
+          |66       |200        |success|
+          |1000      |400        |data not found|
 
 
 

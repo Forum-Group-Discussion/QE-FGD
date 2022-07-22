@@ -12,6 +12,6 @@ Feature: Save Thread
 
     Examples:
     |id_thread|status_code|result|id_user|
-    |32       |200        |success|68    |
+    |62       |200        |success|68    |
     |32       |400        |YOU_HAVE_BEEN_SAVE_THIS_THREAD|0|
     |100      |400        |data_not found|0                |

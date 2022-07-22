@@ -8,7 +8,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 public class RegisterPage extends PageObject {
-    LoginPage loginPage;
+
     General general = new General();
     String username;
     String email;
@@ -39,7 +39,7 @@ public class RegisterPage extends PageObject {
     }
 
     private By fieldPassword(){
-        return By.xpath("//*[@name=\"password\"]");
+        return By.xpath("//*[@id=\"password\"]");
     }
 
     private By fieldConfirmPassword(){

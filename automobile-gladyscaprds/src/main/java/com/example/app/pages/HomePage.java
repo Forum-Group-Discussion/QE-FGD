@@ -31,9 +31,5 @@ public class HomePage extends BasePageObject {
         click(editProfile());
     }
 
-    //android.widget.Button[@content-desc="Logout"]
 
-    public static ScrollToBy to(By... locators) {
-        return new ScrollToBy(locators);
-    }
 }

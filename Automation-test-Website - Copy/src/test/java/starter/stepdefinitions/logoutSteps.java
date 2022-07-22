@@ -8,8 +8,8 @@ import starter.pages.LoginPage;
 import starter.pages.RegisterPage;
 
 public class logoutSteps{
-    String email = "kiyowo@gmail.com";
-    String password ="Kiyowo1511";
+    String email = "yolandaManurung@gmail.com";
+    String password ="Yolanda1511";
     HomePage homePage;
     LoginPage loginPage;
 

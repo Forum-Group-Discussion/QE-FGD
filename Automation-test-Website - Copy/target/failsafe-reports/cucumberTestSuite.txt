@@ -1,4 +1,16 @@
 -------------------------------------------------------------------------------
 Test set: cucumberTestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 27.492 s - in cucumberTestSuite
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 55.79 s <<< FAILURE! - in cucumberTestSuite
+Logout.Logout scenario  Time elapsed: 44.879 s  <<< ERROR!
+org.openqa.selenium.ElementNotInteractableException: 
+element not interactable
+  (Session info: chrome=103.0.5060.134)
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'DESKTOP-01SKV80', ip: '172.20.40.12', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d48536db51f6b88a1e39bf96bb5aa9fd, clickElement {id=feb94853-7a21-41a4-86a0-aca40bbb17cc}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\ASUS\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:53654}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53654/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (d48536db51f6b88a1e39bf96bb5aa9fd)] -> xpath: //*[@value="Logout"]]
+Session ID: d48536db51f6b88a1e39bf96bb5aa9fd
+
